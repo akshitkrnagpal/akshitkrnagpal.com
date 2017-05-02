@@ -1,0 +1,85 @@
+html,body {
+    height: 100%;
+    overflow: hidden;
+}
+body {
+    margin: 0;
+    display: flex;
+    align-content: center;
+    font-family: 'cyntho_slab_proregular', sans-serif;
+}
+.container {
+    width: 100%;
+    margin: auto;
+    padding: 5px;
+}
+#profile-image > img {
+    width:40%;
+    margin: 0 30%;
+    border-radius: 50%;
+    border: 1px solid;
+}
+.row {
+    text-align: center;
+}
+#title {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#scholastic > h4 {
+    font-size: 0.8em;
+}
+#social-links > ul {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+#social-links > ul > li {
+    display: inline-block;
+    width: 20%;
+}
+#social-links > ul > li > a > .img-container {
+    width:  32px;
+    height: 32px;
+}
+#social-links > ul > li > a > .img-container > img {
+    width:  28px;
+    height: 28px;
+    margin: 2px;
+}
+#social-links > ul > li > a > .img-container > img:hover {
+    width:  32px;
+    height: 32px;
+    margin: 0;
+}
+.btn {
+    background: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+.btn:hover {
+    background: whitesmoke;
+}
+a.grey {
+    text-decoration: none;
+}
+a.grey:hover {
+    text-decoration: underline;
+}
+.grey {
+    color: grey;
+}
+.no-decor {
+    text-decoration: none;
+}
+@media (min-width: 426px) {
+    .container {
+        max-width: 426px;
+    }
+}
+@media (min-width: 1415px) {
+    .container {
+        width:30%;
+    }
+}
