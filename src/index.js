@@ -5,16 +5,7 @@ import './index.css';
 import ProfileImage from './components/profile-image.js';
 import FullName from './components/full-name.js';
 import Title from './components/title.js';
-
-class Scholastic extends React.Component {
-	render() {
-		return (
-			<div id="scholastic" className="row">
-                <h4>{this.props.scholastic.title} at <a href={this.props.scholastic.link} className="grey">{this.props.scholastic.place}</a></h4>
-            </div>
-		);
-	}
-}
+import Scholastic from './components/scholastic.js';
 
 class Email extends React.Component {
 	render() {
