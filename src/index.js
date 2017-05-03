@@ -2,15 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-class ProfileImage extends React.Component {
-	render() {
-		return (
-			<div id="profile-image" className="row">
-                <img src={this.props.profileImage} alt={this.props.name.firstname+' '+this.props.name.lastname} />
-            </div>
-		);
-	}
-}
+import ProfileImage from './components/profile-image.js';
 
 class FullName extends React.Component {
 	render() {

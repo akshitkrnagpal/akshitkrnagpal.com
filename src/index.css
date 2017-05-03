@@ -13,12 +13,6 @@ body {
     margin: auto;
     padding: 5px;
 }
-#profile-image > img {
-    width:40%;
-    margin: 0 30%;
-    border-radius: 50%;
-    border: 1px solid;
-}
 .row {
     text-align: center;
 }
