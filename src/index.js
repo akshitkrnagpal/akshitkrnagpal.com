@@ -6,16 +6,7 @@ import ProfileImage from './components/profile-image.js';
 import FullName from './components/full-name.js';
 import Title from './components/title.js';
 import Scholastic from './components/scholastic.js';
-
-class Email extends React.Component {
-	render() {
-		return (
-			<div id="email" className="row">
-                <h4><a href={"mailto:" + this.props.email} className="grey">{this.props.email}</a></h4>
-            </div>
-		);
-	}
-}
+import Email from './components/email.js';
 
 class SocialLink extends React.Component {
 	render() {
