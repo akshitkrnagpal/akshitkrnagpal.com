@@ -7,37 +7,7 @@ import FullName from './components/full-name.js';
 import Title from './components/title.js';
 import Scholastic from './components/scholastic.js';
 import Email from './components/email.js';
-
-class SocialLink extends React.Component {
-	render() {
-		return (
-			<li>
-		        <a href={this.props.link} target="_blank">
-		        	<div className="img-container">
-		                <img src={this.props.icon} />
-		            </div>
-		        </a>
-		    </li>
-		);
-
-	}
-}
-
-class SocialLinks extends React.Component {
-	render() {
-		var socialLinksHtml = [];
-		this.props.socialLinks.forEach( function(socialLink) {
-			socialLinksHtml.push(<SocialLink link={socialLink.link} icon={socialLink.icon} />)
-        })
-		return (
-			<div id="social-links" className="row">
-                <ul>
-                	{socialLinksHtml}
-                </ul>
-            </div>
-		);
-	}
-}
+import SocialLinks from './components/social-links.js';
 
 class ResumeButton extends React.Component {
 	render() {
