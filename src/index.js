@@ -66,6 +66,6 @@ var profile = {
 }
 
 ReactDOM.render(
-  <ProfileContainer profile ={profile} />,
+  <ProfileContainer profile={profile} />,
   document.getElementById('container')
 );
