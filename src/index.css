@@ -16,15 +16,6 @@ body {
 .row {
     text-align: center;
 }
-.btn {
-    background: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    border: 1px solid;
-}
-.btn:hover {
-    background: whitesmoke;
-}
 a.grey {
     text-decoration: none;
 }

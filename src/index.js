@@ -8,17 +8,7 @@ import Title from './components/title.js';
 import Scholastic from './components/scholastic.js';
 import Email from './components/email.js';
 import SocialLinks from './components/social-links.js';
-
-class ResumeButton extends React.Component {
-	render() {
-		return (
-			<div id="resume-link" className="row">
-                <span className="btn"><a className="grey no-decor" href={this.props.resumeLink}>See Resume</a></span>
-            </div>
-
-		);
-	}
-}
+import ResumeButton from './components/resume-button.js';
 
 class ProfileContainer extends React.Component {
 	render() {
