@@ -39,9 +39,21 @@ var profile = {
 		'Developer'
 	],
 	socialLinks : [
-		{ link : 'https://www.facebook.com/akshitkrnagpal' , icon : 'images/social-icons/facebook.png'},
-		{ link : 'https://github.com/AkshitKrNagpal' , icon : 'images/social-icons/github.png'},
-		{ link : 'https://www.linkedin.com/in/akshit-kr-nagpal-40187110a' , icon : 'images/social-icons/linkedin.png'}
+		{
+			link : 'https://www.facebook.com/akshitkrnagpal' ,
+			icon : 'images/social-icons/facebook.png',
+			alt  : 'facebook'
+		},
+		{
+			link : 'https://github.com/AkshitKrNagpal' ,
+			icon : 'images/social-icons/github.png',
+			alt  : 'github'
+		},
+		{
+			link : 'https://www.linkedin.com/in/akshit-kr-nagpal-40187110a' ,
+			icon : 'images/social-icons/linkedin.png',
+			alt  : 'linkedin'
+		}
 	],
 	scholastic : {
 		title : 'Research Scholar',

@@ -7,7 +7,7 @@ class SocialLink extends React.Component {
 			<li>
 		        <a href={this.props.link} target="_blank">
 		        	<div className="img-container">
-		                <img src={this.props.icon} />
+		                <img src={this.props.icon} alt={this.props.alt}/>
 		            </div>
 		        </a>
 		    </li>
@@ -20,7 +20,7 @@ class SocialLinks extends React.Component {
 	render() {
 		var socialLinksHtml = [];
 		this.props.socialLinks.forEach( function(socialLink) {
-			socialLinksHtml.push(<SocialLink link={socialLink.link} icon={socialLink.icon} />)
+			socialLinksHtml.push(<SocialLink link={socialLink.link} icon={socialLink.icon} alt={socialLink.alt} />)
         })
 		return (
 			<div id="social-links" className="row">
