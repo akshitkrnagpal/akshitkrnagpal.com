@@ -4,25 +4,7 @@ import './index.css';
 
 import ProfileImage from './components/profile-image.js';
 import FullName from './components/full-name.js';
-
-class Title extends React.Component {
-	render() {
-		var titlesHtml = []
-		var titles = this.props.titles
-		titlesHtml.push(titles[0])
-		for( var i=1 ; i < titles.length ; i++) {
-			titlesHtml.push(' ')
-			titlesHtml.push(<span className="grey">&#9679;</span>)
-			titlesHtml.push(' ')
-			titlesHtml.push(titles[i])
-		}
-		return (
-			<div id="title" className="row">
-                <h3>{titlesHtml}</h3>
-            </div>
-		);
-	}
-}
+import Title from './components/title.js';
 
 class Scholastic extends React.Component {
 	render() {
