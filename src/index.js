@@ -3,16 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 import ProfileImage from './components/profile-image.js';
-
-class FullName extends React.Component {
-	render() {
-		return (
-			<div id="full-name" className="row">
-                <h1>{this.props.name.firstname} <span className="grey">{this.props.name.lastname}</span></h1>
-            </div>
-		);
-	}
-}
+import FullName from './components/full-name.js';
 
 class Title extends React.Component {
 	render() {
