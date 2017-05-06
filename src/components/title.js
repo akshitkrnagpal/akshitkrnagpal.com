@@ -8,7 +8,7 @@ class Title extends React.Component {
 		titlesHtml.push(titles[0])
 		for( var i=1 ; i < titles.length ; i++) {
 			titlesHtml.push(' ')
-			titlesHtml.push(<span className="grey">&#9679;</span>)
+			titlesHtml.push(<span key={i} className="grey">&#9679;</span>)
 			titlesHtml.push(' ')
 			titlesHtml.push(titles[i])
 		}

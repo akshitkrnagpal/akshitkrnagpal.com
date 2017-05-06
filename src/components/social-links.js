@@ -19,8 +19,9 @@ class SocialLink extends React.Component {
 class SocialLinks extends React.Component {
 	render() {
 		var socialLinksHtml = [];
+		var i = 0; 
 		this.props.socialLinks.forEach( function(socialLink) {
-			socialLinksHtml.push(<SocialLink link={socialLink.link} icon={socialLink.icon} alt={socialLink.alt} />)
+			socialLinksHtml.push(<SocialLink key={i++} link={socialLink.link} icon={socialLink.icon} alt={socialLink.alt} />)
         })
 		return (
 			<div id="social-links" className="row">
