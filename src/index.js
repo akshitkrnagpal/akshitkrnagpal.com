@@ -2,30 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-import ProfileImage from './components/profile-image.js';
-import FullName from './components/full-name.js';
-import Title from './components/title.js';
-import Scholastic from './components/scholastic.js';
-import Email from './components/email.js';
-import SocialLinks from './components/social-links.js';
-import ResumeButton from './components/resume-button.js';
-
-class ProfileContainer extends React.Component {
-	render() {
-		var profile = this.props.profile;
-		return (
-			<div>
-				<ProfileImage profileImage={profile.profileImage} name={profile.name} />
-				<FullName name={profile.name}/>
-				<Title titles={profile.titles} />
-				<Scholastic scholastic={profile.scholastic} />
-				<Email email={profile.email} />
-				<SocialLinks socialLinks={profile.socialLinks} />
-				<ResumeButton resumeLink={profile.resumeLink} />
-			</div>
-		);
-	}
-}
+import ProfileCard from './components/profile-card.js';
 
 var profile = {
 	profileImage : 'images/profile-image.png',
@@ -66,6 +43,6 @@ var profile = {
 }
 
 ReactDOM.render(
-  <ProfileContainer profile={profile} />,
+  <ProfileCard profile={profile} />,
   document.getElementById('container')
 );

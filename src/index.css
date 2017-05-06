@@ -8,14 +8,6 @@ body {
     align-content: center;
     font-family: 'cyntho_slab_proregular', sans-serif;
 }
-.container {
-    width: 100%;
-    margin: auto;
-    padding: 5px;
-}
-.row {
-    text-align: center;
-}
 a.grey {
     text-decoration: none;
 }
@@ -27,14 +19,4 @@ a.grey:hover {
 }
 .no-decor {
     text-decoration: none;
-}
-@media (min-width: 426px) {
-    .container {
-        max-width: 426px;
-    }
-}
-@media (min-width: 1415px) {
-    .container {
-        width:30%;
-    }
 }
