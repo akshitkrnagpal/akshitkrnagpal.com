@@ -9,6 +9,7 @@
 #social-links > ul > li > a > .img-container {
     width:  32px;
     height: 32px;
+    margin: auto;
 }
 #social-links > ul > li > a > .img-container > img {
     width:  28px;
