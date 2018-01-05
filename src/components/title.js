@@ -1,7 +1,7 @@
 import React from 'react';
 import './title.css';
 
-class Title extends React.Component {
+export default class Title extends React.Component {
 	render() {
 		var titlesHtml = []
 		var titles = this.props.titles
@@ -19,5 +19,3 @@ class Title extends React.Component {
 		);
 	}
 }
-
-module.exports = Title;

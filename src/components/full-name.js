@@ -1,6 +1,6 @@
 import React from 'react';
 
-class FullName extends React.Component {
+export default class FullName extends React.Component {
 	render() {
 		return (
 			<div id="full-name" className="row">
@@ -9,5 +9,3 @@ class FullName extends React.Component {
 		);
 	}
 }
-
-module.exports = FullName;

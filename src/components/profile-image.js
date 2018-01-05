@@ -1,7 +1,7 @@
 import React from 'react';
 import './profile-image.css';
 
-class ProfileImage extends React.Component {
+export default class ProfileImage extends React.Component {
 	render() {
 		return (
 			<div id="profile-image" className="row">
@@ -10,5 +10,3 @@ class ProfileImage extends React.Component {
 		);
 	}
 }
-
-module.exports = ProfileImage;

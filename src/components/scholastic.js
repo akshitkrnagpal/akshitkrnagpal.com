@@ -1,7 +1,7 @@
 import React from 'react';
 import './scholastic.css';
 
-class Scholastic extends React.Component {
+export default class Scholastic extends React.Component {
 	render() {
 		return (
 			<div id="scholastic" className="row">
@@ -10,5 +10,3 @@ class Scholastic extends React.Component {
 		);
 	}
 }
-
-module.exports = Scholastic;

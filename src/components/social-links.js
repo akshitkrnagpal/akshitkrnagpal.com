@@ -16,7 +16,7 @@ class SocialLink extends React.Component {
 	}
 }
 
-class SocialLinks extends React.Component {
+export default class SocialLinks extends React.Component {
 	render() {
 		var socialLinksHtml = [];
 		var i = 0; 
@@ -32,5 +32,3 @@ class SocialLinks extends React.Component {
 		);
 	}
 }
-
-module.exports = SocialLinks;

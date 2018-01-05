@@ -10,7 +10,7 @@ import ResumeButton from './resume-button.js';
 
 import './profile-card.css';
 
-class ProfileCard extends React.Component {
+export default class ProfileCard extends React.Component {
 	render() {
 		var profile = this.props.profile;
 		return (
@@ -26,5 +26,3 @@ class ProfileCard extends React.Component {
 		);
 	}
 }
-
-module.exports = ProfileCard;

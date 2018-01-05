@@ -1,7 +1,7 @@
 import React from 'react';
 import './resume-button.css';
 
-class ResumeButton extends React.Component {
+export default class ResumeButton extends React.Component {
 	render() {
 		return (
 			<div id="resume-link" className="row">
@@ -11,5 +11,3 @@ class ResumeButton extends React.Component {
 		);
 	}
 }
-
-module.exports = ResumeButton;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Email extends React.Component {
+export default class Email extends React.Component {
 	render() {
 		return (
 			<div id="email" className="row">
@@ -9,5 +9,3 @@ class Email extends React.Component {
 		);
 	}
 }
-
-module.exports = Email;
