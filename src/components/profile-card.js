@@ -14,7 +14,7 @@ export default class ProfileCard extends React.Component {
 	render() {
 		var profile = this.props.profile;
 		return (
-			<div className="container">
+			<div>
 				<ProfileImage profileImage={profile.profileImage} name={profile.name} />
 				<FullName name={profile.name}/>
 				<Title titles={profile.titles} />
