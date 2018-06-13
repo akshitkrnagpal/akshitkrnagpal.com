@@ -4,8 +4,8 @@
   "private": true,
   "homepage": "http://akshitkrnagpal.com",
   "dependencies": {
-    "react": "16.4.0",
-    "react-dom": "16.4.0"
+    "react": "16.4.1",
+    "react-dom": "16.4.1"
   },
   "devDependencies": {
     "react-scripts": "1.1.4"
