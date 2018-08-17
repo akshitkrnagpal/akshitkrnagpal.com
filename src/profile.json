@@ -11,11 +11,6 @@
 	],
 	"socialLinks" : [
 		{
-			"link" : "https://www.facebook.com/akshitkrnagpal" ,
-			"icon" : "images/social-icons/facebook.png",
-			"alt"  : "facebook"
-		},
-		{
 			"link" : "https://github.com/AkshitKrNagpal" ,
 			"icon" : "images/social-icons/github.png",
 			"alt"  : "github"
