@@ -15,7 +15,7 @@ a.grey:hover {
     text-decoration: underline;
 }
 .grey {
-    color: grey;
+    color: #767676;
 }
 .no-decor {
     text-decoration: none;
