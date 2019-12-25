@@ -1,12 +1,15 @@
 import React from 'react';
 import './scholastic.css';
 
-export default class Scholastic extends React.Component {
-	render() {
-		return (
-			<div id="scholastic" className="row">
-                <h4>{this.props.scholastic.title} at <a href={this.props.scholastic.link} className="grey">{this.props.scholastic.place}</a></h4>
-            </div>
-		);
-	}
-}
+const Scholastic = ({ scholastic: { title, link, place } }) => (
+    <div id='scholastic' className='row'>
+        <h4>
+            {title} at{' '}
+            <a href={link} className='grey'>
+                {place}
+            </a>
+        </h4>
+    </div>
+);
+
+export default Scholastic;

@@ -4,9 +4,9 @@ import './index.css';
 
 import ProfileCard from './components/profile-card.js';
 
-var profile = require('./profile.json');
+import profile from './profile.json';
 
 ReactDOM.render(
-  <ProfileCard profile={profile} />,
-  document.getElementById('container')
+    <ProfileCard profile={profile} />,
+    document.getElementById('container'),
 );

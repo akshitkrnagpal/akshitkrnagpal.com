@@ -1,37 +1,36 @@
 {
-	"profileImage" : "images/profile-image.jpeg",
-	"name" : {
-		"firstname" : "Akshit",
-		"lastname"  : "Kr Nagpal"
+	"profileImage": "images/profile-image.jpeg",
+	"name": {
+		"firstname": "Akshit",
+		"lastname": "Kr Nagpal"
 	},
-	"titles" : [
+	"titles": [
 		"Programmer",
 		"Coder",
 		"Developer"
 	],
-	"socialLinks" : [
+	"socialLinks": [
 		{
-			"link" : "https://www.facebook.com/akshitkrnagpal" ,
-			"icon" : "images/social-icons/facebook.png",
-			"alt"  : "facebook"
+			"link": "https://www.facebook.com/akshitkrnagpal",
+			"icon": "images/social-icons/facebook.png",
+			"alt": "facebook"
 		},
 		{
-			"link" : "https://github.com/akshitkrnagpal" ,
-			"icon" : "images/social-icons/github.png",
-			"alt"  : "github"
+			"link": "https://github.com/akshitkrnagpal",
+			"icon": "images/social-icons/github.png",
+			"alt": "github"
 		},
 		{
-			"link" : "https://www.linkedin.com/in/akshitkrnagpal" ,
-			"icon" : "images/social-icons/linkedin.png",
-			"alt"  : "linkedin"
+			"link": "https://www.linkedin.com/in/akshitkrnagpal",
+			"icon": "images/social-icons/linkedin.png",
+			"alt": "linkedin"
 		}
 	],
-	"scholastic" : {
-		"title" : "Research Scholar",
-		"place" : "Cluster Innovation Centre",
-		"link"  : "https://ducic.ac.in/"
+	"scholastic": {
+		"title": "Research Scholar",
+		"place": "Cluster Innovation Centre",
+		"link": "https://ducic.ac.in/"
 	},
-	"email" : "akshitkrnagpal@gmail.com",
-	"resumeLink" : "resume.pdf"
-
+	"email": "akshitkrnagpal@gmail.com",
+	"resumeLink": "resume.pdf"
 }

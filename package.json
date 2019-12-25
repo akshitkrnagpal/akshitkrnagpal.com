@@ -4,11 +4,11 @@
   "private": true,
   "homepage": "http://akshitkrnagpal.com",
   "dependencies": {
-    "react": "16.4.0",
-    "react-dom": "16.4.0"
+    "react": "16.12.0",
+    "react-dom": "16.12.0"
   },
   "devDependencies": {
-    "react-scripts": "1.1.4"
+    "react-scripts": "3.3.0"
   },
   "scripts": {
     "start": "react-scripts start",

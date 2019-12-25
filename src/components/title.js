@@ -1,21 +1,16 @@
 import React from 'react';
 import './title.css';
 
-export default class Title extends React.Component {
-	render() {
-		var titlesHtml = []
-		var titles = this.props.titles
-		titlesHtml.push(titles[0])
-		for( var i=1 ; i < titles.length ; i++) {
-			titlesHtml.push(' ')
-			titlesHtml.push(<span key={i} className="grey">&#9679;</span>)
-			titlesHtml.push(' ')
-			titlesHtml.push(titles[i])
-		}
-		return (
-			<div id="title" className="row">
-                <h3>{titlesHtml}</h3>
-            </div>
-		);
-	}
-}
+const Title = ({ titles }) => (
+    <div id='title' className='row'>
+        <h3>
+            {titles.reduce((prev, next) => [
+                prev,
+                <span className='grey spaced'>&#9679;</span>,
+                next,
+            ])}
+        </h3>
+    </div>
+);
+
+export default Title;

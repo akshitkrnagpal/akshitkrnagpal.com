@@ -10,19 +10,26 @@ import ResumeButton from './resume-button.js';
 
 import './profile-card.css';
 
-export default class ProfileCard extends React.Component {
-	render() {
-		var profile = this.props.profile;
-		return (
-			<div role='main'>
-				<ProfileImage profileImage={profile.profileImage} name={profile.name} />
-				<FullName name={profile.name}/>
-				<Title titles={profile.titles} />
-				<Scholastic scholastic={profile.scholastic} />
-				<Email email={profile.email} />
-				<SocialLinks socialLinks={profile.socialLinks} />
-				<ResumeButton resumeLink={profile.resumeLink} />
-			</div>
-		);
-	}
-}
+const ProfileCard = ({
+    profile: {
+        profileImage,
+        name,
+        titles,
+        scholastic,
+        email,
+        socialLinks,
+        resumeLink,
+    },
+}) => (
+    <div role='main'>
+        <ProfileImage profileImage={profileImage} name={name} />
+        <FullName name={name} />
+        <Title titles={titles} />
+        <Scholastic scholastic={scholastic} />
+        <Email email={email} />
+        <SocialLinks socialLinks={socialLinks} />
+        <ResumeButton resumeLink={resumeLink} />
+    </div>
+);
+
+export default ProfileCard;
