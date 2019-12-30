@@ -1,14 +1,17 @@
 html,
 body {
-    height: 100%;
     overflow: hidden;
 }
 body {
     margin: 0;
-    display: flex;
-    align-content: center;
+    box-sizing: border-box;
     font-family: 'Muli', sans-serif;
 }
+
+* {
+    box-sizing: inherit;
+}
+
 a.grey {
     text-decoration: none;
 }
@@ -20,4 +23,82 @@ a.grey:hover {
 }
 .no-decor {
     text-decoration: none;
+}
+
+.container {
+    height: 100vh;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (min-width: 426px) {
+    .profile-card {
+        max-width: 426px;
+    }
+}
+@media (min-width: 1415px) {
+    .profile-card {
+        width: 30%;
+    }
+}
+
+.row {
+    text-align: center;
+}
+
+.profile-image {
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 1px solid;
+}
+
+.btn {
+    background: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+.btn:hover {
+    background: whitesmoke;
+}
+
+#scholastic > h4 {
+    font-size: 0.8em;
+}
+
+#title {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.spaced {
+    margin: 0 5px;
+}
+
+#social-links > ul {
+    padding: 2px 20%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#social-links > ul > li {
+    display: inline-block;
+    width: 20%;
+}
+#social-links > ul > li > a > .img-container {
+    width: 32px;
+    height: 32px;
+    margin: auto;
+}
+#social-links > ul > li > a > .img-container > svg {
+    width: 28px;
+    height: 28px;
+    margin: 2px;
+    cursor: pointer;
+}
+#social-links > ul > li > a > .img-container > svg:hover {
+    width: 32px;
+    height: 32px;
+    margin: 0;
 }

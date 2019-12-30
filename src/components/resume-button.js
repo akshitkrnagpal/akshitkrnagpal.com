@@ -1,5 +1,4 @@
 import React from 'react';
-import './resume-button.css';
 
 const ResumeButton = ({ resumeLink }) => (
     <div id='resume-link' className='row'>

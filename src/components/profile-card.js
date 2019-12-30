@@ -8,8 +8,6 @@ import Email from './email.js';
 import SocialLinks from './social-links.js';
 import ResumeButton from './resume-button.js';
 
-import './profile-card.css';
-
 const ProfileCard = ({
     profile: {
         profileImage,
@@ -21,14 +19,16 @@ const ProfileCard = ({
         resumeLink,
     },
 }) => (
-    <div role='main'>
-        <ProfileImage profileImage={profileImage} name={name} />
-        <FullName name={name} />
-        <Title titles={titles} />
-        <Scholastic scholastic={scholastic} />
-        <Email email={email} />
-        <SocialLinks socialLinks={socialLinks} />
-        <ResumeButton resumeLink={resumeLink} />
+    <div className='container'>
+        <div className='profile-card' role='main'>
+            <ProfileImage profileImage={profileImage} name={name} />
+            <FullName name={name} />
+            <Title titles={titles} />
+            <Scholastic scholastic={scholastic} />
+            <Email email={email} />
+            <SocialLinks socialLinks={socialLinks} />
+            <ResumeButton resumeLink={resumeLink} />
+        </div>
     </div>
 );
 

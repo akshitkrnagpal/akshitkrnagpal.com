@@ -1,19 +1,25 @@
 {
-  "name": "akshitkrnagpal",
-  "version": "0.1.0",
-  "private": true,
-  "homepage": "http://akshitkrnagpal.com",
-  "dependencies": {
-    "react": "16.12.0",
-    "react-dom": "16.12.0"
-  },
-  "devDependencies": {
-    "react-scripts": "3.3.0"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+	"name": "akshitkrnagpal",
+	"version": "1.0.0",
+	"private": true,
+	"homepage": "http://akshitkrnagpal.com",
+	"dependencies": {
+		"gatsby": "2.18.17",
+		"gatsby-image": "2.2.37",
+		"gatsby-plugin-google-fonts": "1.0.1",
+		"gatsby-plugin-manifest": "2.2.34",
+		"gatsby-plugin-react-helmet": "3.1.18",
+		"gatsby-plugin-sharp": "2.3.10",
+		"gatsby-source-filesystem": "2.1.43",
+		"gatsby-transformer-sharp": "2.3.9",
+		"react": "16.12.0",
+		"react-dom": "16.12.0",
+		"react-helmet": "5.2.1"
+	},
+	"scripts": {
+		"start": "gatsby develop",
+		"develop": "gatsby develop",
+		"build": "gatsby build",
+		"test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+	}
 }
