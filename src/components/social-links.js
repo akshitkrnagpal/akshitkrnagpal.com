@@ -50,6 +50,7 @@ const SocialLinks = ({ socialLinks }) => (
             {socialLinks.map(socialLink => (
                 <SocialLink
                     key={socialLink.link}
+                    link={socialLink.link}
                     icon={iconMap[socialLink.alt]}
                 />
             ))}
