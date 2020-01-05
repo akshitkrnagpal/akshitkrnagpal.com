@@ -16,6 +16,11 @@ module.exports = {
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
+                name: `Akshit Kr Nagpal`,
+                short_name: `Akshit`,
+                background_color: `white`,
+                theme_color: `black`,
+                display: `standalone`,
                 icon: `src/images/favicon.png`, // This path is relative to the root of the site.
             },
         },
