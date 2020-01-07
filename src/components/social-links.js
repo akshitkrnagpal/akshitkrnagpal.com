@@ -36,9 +36,14 @@ const iconMap = {
     ),
 };
 
-const SocialLink = ({ link, icon }) => (
+const SocialLink = ({ link, icon, label }) => (
     <li>
-        <a href={link} target='_blank' rel='noopener noreferrer'>
+        <a
+            aria-label={label}
+            href={link}
+            target='_blank'
+            rel='noopener noreferrer'
+        >
             <div className='img-container'>{icon}</div>
         </a>
     </li>
@@ -51,6 +56,7 @@ const SocialLinks = ({ socialLinks }) => (
                 <SocialLink
                     key={socialLink.link}
                     link={socialLink.link}
+                    label={socialLink.alt}
                     icon={iconMap[socialLink.alt]}
                 />
             ))}

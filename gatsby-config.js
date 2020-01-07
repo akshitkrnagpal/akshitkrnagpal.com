@@ -1,6 +1,7 @@
 module.exports = {
     siteMetadata: {
         title: `Akshit Kr Nagpal`,
+        description: `Software Engineer with a passion for full-stack web development and a history of delivering high-quality code at high velocity. Open source hobbyist. An adept programmer with strong knowledge of data structures and algorithms.`,
         author: `@akshitkrnagpal`,
     },
     plugins: [

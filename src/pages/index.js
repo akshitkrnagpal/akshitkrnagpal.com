@@ -11,6 +11,7 @@ const query = graphql`
         site {
             siteMetadata {
                 title
+                description
             }
         }
     }
@@ -18,11 +19,15 @@ const query = graphql`
 
 const Root = () => {
     const data = useStaticQuery(query);
-    const title = data.site.siteMetadata.title;
+    const { title, description } = data.site.siteMetadata;
 
     return (
         <>
-            <Helmet title={title} />
+            <Helmet
+                title={title}
+                htmlAttributes={{ lang: 'en' }}
+                meta={[{ name: 'description', content: description }]}
+            />
             <ProfileCard profile={profile} />
         </>
     );
