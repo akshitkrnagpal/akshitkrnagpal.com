@@ -31,6 +31,12 @@ module.exports = {
                 path: `./src/images/`,
             },
         },
+        {
+            resolve: `gatsby-source-google-analytics`,
+            options: {
+                trackingId: `UA-84508219-2`,
+            },
+        },
         `gatsby-transformer-sharp`,
         {
             resolve: `gatsby-plugin-offline`,
