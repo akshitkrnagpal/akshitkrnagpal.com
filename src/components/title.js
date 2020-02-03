@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Title = ({ titles }) => (
-    <div id='title' className='row'>
+    <div className='row'>
         <h3>
             {titles.reduce((prev, next) => [
                 prev,

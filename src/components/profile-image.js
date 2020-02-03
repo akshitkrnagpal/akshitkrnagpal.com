@@ -19,7 +19,7 @@ const ProfileImage = ({ name: { firstname, lastname } }) => {
     const profileImage = data.file.childImageSharp.fixed;
 
     return (
-        <div id='profile-image' className='row'>
+        <div className='row'>
             <Img
                 className='profile-image'
                 fixed={profileImage}

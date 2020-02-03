@@ -45,16 +45,6 @@ body {
     border: 1px solid;
 }
 
-#scholastic > h4 {
-    font-size: 0.8em;
-}
-
-#title {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
 .spaced {
     margin: 0 5px;
 }

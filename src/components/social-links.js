@@ -50,7 +50,7 @@ const SocialLink = ({ link, icon, label }) => (
 );
 
 const SocialLinks = ({ social }) => (
-    <div id='social-links' className='row'>
+    <div className='row'>
         {Object.keys(social).map(website => (
             <SocialLink
                 key={website}

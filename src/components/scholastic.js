@@ -1,13 +1,21 @@
 import React from 'react';
 
+import { ExternalLink, Text } from '../styled';
+
 const Scholastic = ({ scholastic: { title, link, place } }) => (
-    <div id='scholastic' className='row'>
-        <h4>
+    <div className='row'>
+        <Text as='h4' size='sm'>
             {title} at{' '}
-            <a href={link} className='grey'>
+            <ExternalLink
+                className='grey'
+                href={link}
+                aria-label={place}
+                target='_blank'
+                rel='noopener noreferrer'
+            >
                 {place}
-            </a>
-        </h4>
+            </ExternalLink>
+        </Text>
     </div>
 );
 
