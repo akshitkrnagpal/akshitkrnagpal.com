@@ -1,12 +1,12 @@
 import React from 'react';
 
-import ProfileImage from './profile-image.js';
-import FullName from './full-name.js';
-import Title from './title.js';
-import Scholastic from './scholastic.js';
-import Email from './email.js';
-import SocialLinks from './social-links.js';
-import ResumeButton from './resume-button.js';
+import ProfileImage from './profile-image';
+import FullName from './full-name';
+import Title from './title';
+import Scholastic from './scholastic';
+import Email from './email';
+import SocialLinks from './social-links';
+import ResumeButton from './resume-button';
 
 const ProfileCard = ({
     profile: { profileImage, name, titles, scholastic, email, social, resume },
