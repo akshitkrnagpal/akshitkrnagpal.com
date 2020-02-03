@@ -1,11 +1,13 @@
 import React from 'react';
 
+import { Text } from '../styled';
+
 const FullName = ({ name: { firstname, lastname } }) => (
     <div className='row'>
-        <h1>
+        <Text as='h1' size='xl'>
             <span>{firstname} </span>
             <span className='grey'>{lastname}</span>
-        </h1>
+        </Text>
     </div>
 );
 

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 const sizes = {
     sm: '0.8rem',
     lg: '1.2rem',
+    xl: '2rem',
 };
 
 export default styled.p`

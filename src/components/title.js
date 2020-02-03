@@ -1,8 +1,10 @@
 import React from 'react';
 
+import { Text } from '../styled';
+
 const Title = ({ titles }) => (
     <div className='row'>
-        <h3>
+        <Text as='h3' size='lg'>
             {titles.reduce((prev, next) => [
                 prev,
                 <span key={next} className='grey spaced'>
@@ -10,7 +12,7 @@ const Title = ({ titles }) => (
                 </span>,
                 next,
             ])}
-        </h3>
+        </Text>
     </div>
 );
 
