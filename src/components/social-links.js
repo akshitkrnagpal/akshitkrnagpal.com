@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { SocialIcon } from '../styled';
+
 const iconMap = {
     facebook: (
         <svg viewBox='0 0 266.893 266.895'>
@@ -37,30 +39,26 @@ const iconMap = {
 };
 
 const SocialLink = ({ link, icon, label }) => (
-    <li>
-        <a
-            aria-label={label}
-            href={link}
-            target='_blank'
-            rel='noopener noreferrer'
-        >
-            <div className='img-container'>{icon}</div>
-        </a>
-    </li>
+    <SocialIcon
+        aria-label={label}
+        href={link}
+        target='_blank'
+        rel='noopener noreferrer'
+    >
+        {icon}
+    </SocialIcon>
 );
 
 const SocialLinks = ({ social }) => (
     <div id='social-links' className='row'>
-        <ul>
-            {Object.keys(social).map(website => (
-                <SocialLink
-                    key={website}
-                    link={social[website]}
-                    label={website}
-                    icon={iconMap[website]}
-                />
-            ))}
-        </ul>
+        {Object.keys(social).map(website => (
+            <SocialLink
+                key={website}
+                link={social[website]}
+                label={website}
+                icon={iconMap[website]}
+            />
+        ))}
     </div>
 );
 

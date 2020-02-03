@@ -45,6 +45,7 @@ a.grey:hover {
 
 .row {
     text-align: center;
+    margin: 1rem 0;
 }
 
 .profile-image {
@@ -65,30 +66,4 @@ a.grey:hover {
 
 .spaced {
     margin: 0 5px;
-}
-
-#social-links > ul {
-    padding: 2px 20%;
-    display: flex;
-    justify-content: space-evenly;
-}
-#social-links > ul > li {
-    display: inline-block;
-    width: 20%;
-}
-#social-links > ul > li > a > .img-container {
-    width: 32px;
-    height: 32px;
-    margin: auto;
-}
-#social-links > ul > li > a > .img-container > svg {
-    width: 28px;
-    height: 28px;
-    margin: 2px;
-    cursor: pointer;
-}
-#social-links > ul > li > a > .img-container > svg:hover {
-    width: 32px;
-    height: 32px;
-    margin: 0;
 }
