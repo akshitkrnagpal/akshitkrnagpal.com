@@ -12,17 +12,8 @@ body {
     box-sizing: inherit;
 }
 
-a.grey {
-    text-decoration: none;
-}
-a.grey:hover {
-    text-decoration: underline;
-}
 .grey {
     color: #767676;
-}
-.no-decor {
-    text-decoration: none;
 }
 
 .container {

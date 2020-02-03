@@ -25,9 +25,7 @@ const query = graphql`
                         github
                         linkedin
                     }
-                    contact {
-                        email
-                    }
+                    email
                     resume
                 }
             }

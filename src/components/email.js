@@ -1,12 +1,17 @@
 import React from 'react';
 
+import { ExternalLink } from '../styled';
+
 const Email = ({ email }) => (
     <div id='email' className='row'>
-        <h4>
-            <a href={`mailto:${email}`} className='grey'>
-                {email}
-            </a>
-        </h4>
+        <ExternalLink
+            aria-label={email}
+            href={`mailto:${email}`}
+            target='_blank'
+            rel='noopener noreferrer'
+        >
+            {email}
+        </ExternalLink>
     </div>
 );
 
