@@ -4,6 +4,7 @@
 	"private": true,
 	"homepage": "http://akshitkrnagpal.com",
 	"dependencies": {
+		"babel-plugin-styled-components": "1.10.7",
 		"gatsby": "2.18.17",
 		"gatsby-image": "2.2.37",
 		"gatsby-plugin-google-analytics": "2.1.33",
@@ -12,12 +13,14 @@
 		"gatsby-plugin-offline": "3.0.30",
 		"gatsby-plugin-react-helmet": "3.1.18",
 		"gatsby-plugin-sharp": "2.3.10",
+		"gatsby-plugin-styled-components": "3.1.19",
 		"gatsby-source-filesystem": "2.1.43",
 		"gatsby-transformer-sharp": "2.3.9",
 		"gatsby-transformer-yaml": "2.2.24",
 		"react": "16.12.0",
 		"react-dom": "16.12.0",
-		"react-helmet": "5.2.1"
+		"react-helmet": "5.2.1",
+		"styled-components": "5.0.0"
 	},
 	"scripts": {
 		"start": "gatsby develop",

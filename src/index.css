@@ -53,16 +53,6 @@ a.grey:hover {
     border: 1px solid;
 }
 
-.btn {
-    background: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    border: 1px solid;
-}
-.btn:hover {
-    background: whitesmoke;
-}
-
 #scholastic > h4 {
     font-size: 0.8em;
 }

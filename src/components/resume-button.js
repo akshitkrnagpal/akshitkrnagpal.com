@@ -1,12 +1,12 @@
 import React from 'react';
 
+import { Button } from '../styled';
+
 const ResumeButton = ({ resume }) => (
     <div id='resume-link' className='row'>
-        <span className='btn'>
-            <a className='grey no-decor' href={resume}>
-                See Resume
-            </a>
-        </span>
+        <Button as='a' href={resume}>
+            See Resume
+        </Button>
     </div>
 );
 
