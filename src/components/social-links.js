@@ -49,15 +49,15 @@ const SocialLink = ({ link, icon, label }) => (
     </li>
 );
 
-const SocialLinks = ({ socialLinks }) => (
+const SocialLinks = ({ social }) => (
     <div id='social-links' className='row'>
         <ul>
-            {socialLinks.map(socialLink => (
+            {Object.keys(social).map(website => (
                 <SocialLink
-                    key={socialLink.link}
-                    link={socialLink.link}
-                    label={socialLink.alt}
-                    icon={iconMap[socialLink.alt]}
+                    key={website}
+                    link={social[website]}
+                    label={website}
+                    icon={iconMap[website]}
                 />
             ))}
         </ul>

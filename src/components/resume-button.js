@@ -1,9 +1,9 @@
 import React from 'react';
 
-const ResumeButton = ({ resumeLink }) => (
+const ResumeButton = ({ resume }) => (
     <div id='resume-link' className='row'>
         <span className='btn'>
-            <a className='grey no-decor' href={resumeLink}>
+            <a className='grey no-decor' href={resume}>
                 See Resume
             </a>
         </span>

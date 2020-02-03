@@ -9,15 +9,7 @@ import SocialLinks from './social-links.js';
 import ResumeButton from './resume-button.js';
 
 const ProfileCard = ({
-    profile: {
-        profileImage,
-        name,
-        titles,
-        scholastic,
-        email,
-        socialLinks,
-        resumeLink,
-    },
+    profile: { profileImage, name, titles, scholastic, email, social, resume },
 }) => (
     <div className='container'>
         <div className='profile-card' role='main'>
@@ -26,8 +18,8 @@ const ProfileCard = ({
             <Title titles={titles} />
             <Scholastic scholastic={scholastic} />
             <Email email={email} />
-            <SocialLinks socialLinks={socialLinks} />
-            <ResumeButton resumeLink={resumeLink} />
+            <SocialLinks social={social} />
+            <ResumeButton resume={resume} />
         </div>
     </div>
 );

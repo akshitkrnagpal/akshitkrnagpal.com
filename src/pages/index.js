@@ -4,14 +4,32 @@ import { graphql, useStaticQuery } from 'gatsby';
 
 import ProfileCard from '../components/profile-card';
 
-import profile from '../profile.json';
-
 const query = graphql`
     query {
-        site {
-            siteMetadata {
-                title
-                description
+        allData {
+            edges {
+                node {
+                    name {
+                        firstname
+                        lastname
+                    }
+                    description
+                    titles
+                    scholastic {
+                        title
+                        place
+                        link
+                    }
+                    social {
+                        facebook
+                        github
+                        linkedin
+                    }
+                    contact {
+                        email
+                    }
+                    resume
+                }
             }
         }
     }
@@ -19,12 +37,12 @@ const query = graphql`
 
 const Root = () => {
     const data = useStaticQuery(query);
-    const { title, description } = data.site.siteMetadata;
-
+    const profile = data.allData.edges[0].node;
+    const { name, description } = profile;
     return (
         <>
             <Helmet
-                title={title}
+                title={`${name.firstname} ${name.lastname}`}
                 htmlAttributes={{ lang: 'en' }}
                 meta={[{ name: 'description', content: description }]}
             />
