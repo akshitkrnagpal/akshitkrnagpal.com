@@ -24,6 +24,7 @@ const query = graphql`
                         facebook
                         github
                         linkedin
+                        twitter
                     }
                     email
                     resume

@@ -4,6 +4,9 @@
 	"private": true,
 	"homepage": "http://akshitkrnagpal.com",
 	"dependencies": {
+		"@fortawesome/fontawesome-svg-core": "1.2.26",
+		"@fortawesome/free-brands-svg-icons": "5.12.0",
+		"@fortawesome/react-fontawesome": "0.1.8",
 		"babel-plugin-styled-components": "1.10.7",
 		"gatsby": "2.18.17",
 		"gatsby-image": "2.2.37",
