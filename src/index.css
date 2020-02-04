@@ -7,7 +7,7 @@ html {
 }
 
 .container {
-    @apply min-h-screen p-1 flex items-center justify-center;
+    @apply min-h-screen p-1 flex items-center justify-center mx-auto;
 }
 
 .row {
