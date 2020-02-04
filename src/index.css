@@ -1,46 +1,25 @@
-html,
-body {
-    overflow: hidden;
-}
-body {
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Muli', sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-* {
-    box-sizing: inherit;
-}
-
-.grey {
-    color: #767676;
+html {
+    @apply font-sans;
 }
 
 .container {
-    height: 100vh;
-    padding: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-@media (min-width: 426px) {
-    .profile-card {
-        max-width: 426px;
-    }
-}
-@media (min-width: 1415px) {
-    .profile-card {
-        width: 30%;
-    }
+    @apply min-h-screen p-1 flex items-center justify-center;
 }
 
 .row {
-    text-align: center;
-    margin: 1rem 0;
+    @apply text-center my-4;
 }
 
 .profile-image {
-    margin: 0 auto;
-    border-radius: 50%;
-    border: 1px solid;
+    @apply mx-auto my-0 rounded-full border border-black;
+}
+
+@screen sm {
+    .profile-card {
+        @apply max-w-sm;
+    }
 }

@@ -8,6 +8,13 @@ module.exports = {
             },
         },
         `gatsby-plugin-styled-components`,
+        `gatsby-plugin-postcss`,
+        {
+            resolve: `gatsby-plugin-purgecss`,
+            options: {
+                tailwind: true, // Enable tailwindcss support
+            },
+        },
         `gatsby-plugin-sharp`,
         `gatsby-plugin-react-helmet`,
         {
