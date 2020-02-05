@@ -8,7 +8,7 @@ export default styled.a`
 
     transition: transform 0.3s ease-out;
 
-    &:hover {
-        transform: scale(1.1);
+    &:not(:hover) {
+        transform: scale(0.8);
     }
 `;
