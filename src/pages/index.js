@@ -39,14 +39,14 @@ const Root = () => {
     const profile = data.allData.edges[0].node;
     const { name, description } = profile;
     return (
-        <>
+        <div className='container'>
             <Helmet
                 title={`${name.firstname} ${name.lastname}`}
                 htmlAttributes={{ lang: 'en' }}
                 meta={[{ name: 'description', content: description }]}
             />
             <ProfileCard profile={profile} />
-        </>
+        </div>
     );
 };
 
