@@ -1,10 +1,10 @@
 module.exports = {
-    theme: {
-        fontFamily: {
-            sans: 'Muli, sans-serif',
-        },
-        extend: {},
+  theme: {
+    fontFamily: {
+      sans: 'Muli, sans-serif',
     },
-    variants: {},
-    plugins: [],
+    extend: {},
+  },
+  variants: {},
+  plugins: [],
 };

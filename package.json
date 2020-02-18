@@ -1,40 +1,40 @@
 {
-	"name": "akshitkrnagpal",
-	"version": "1.0.0",
-	"private": true,
-	"homepage": "http://akshitkrnagpal.com",
-	"dependencies": {
-		"@fortawesome/fontawesome-svg-core": "1.2.27",
-		"@fortawesome/free-brands-svg-icons": "5.12.1",
-		"@fortawesome/react-fontawesome": "0.1.8",
-		"babel-plugin-styled-components": "1.10.7",
-		"gatsby": "2.19.12",
-		"gatsby-image": "2.2.40",
-		"gatsby-plugin-google-analytics": "2.1.35",
-		"gatsby-plugin-google-fonts": "1.0.1",
-		"gatsby-plugin-manifest": "2.2.41",
-		"gatsby-plugin-postcss": "2.1.20",
-		"gatsby-plugin-purgecss": "4.0.1",
-		"gatsby-plugin-react-helmet": "3.1.22",
-		"gatsby-plugin-remove-serviceworker": "1.0.0",
-		"gatsby-plugin-sharp": "2.4.5",
-		"gatsby-plugin-styled-components": "3.1.19",
-		"gatsby-source-filesystem": "2.1.48",
-		"gatsby-transformer-sharp": "2.3.14",
-		"gatsby-transformer-yaml": "2.2.24",
-		"react": "16.12.0",
-		"react-dom": "16.12.0",
-		"react-helmet": "5.2.1",
-		"styled-components": "5.0.1"
-	},
-	"scripts": {
-		"start": "gatsby develop",
-		"develop": "gatsby develop",
-		"build": "gatsby build",
-		"test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
-	},
-	"devDependencies": {
-		"stylelint-config-recommended": "3.0.0",
-		"tailwindcss": "1.2.0"
-	}
+    "name": "akshitkrnagpal",
+    "version": "1.0.0",
+    "private": true,
+    "homepage": "http://akshitkrnagpal.com",
+    "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "1.2.27",
+        "@fortawesome/free-brands-svg-icons": "5.12.1",
+        "@fortawesome/react-fontawesome": "0.1.8",
+        "babel-plugin-styled-components": "1.10.7",
+        "gatsby": "2.19.12",
+        "gatsby-image": "2.2.40",
+        "gatsby-plugin-google-analytics": "2.1.35",
+        "gatsby-plugin-google-fonts": "1.0.1",
+        "gatsby-plugin-manifest": "2.2.41",
+        "gatsby-plugin-postcss": "2.1.20",
+        "gatsby-plugin-purgecss": "4.0.1",
+        "gatsby-plugin-react-helmet": "3.1.22",
+        "gatsby-plugin-remove-serviceworker": "1.0.0",
+        "gatsby-plugin-sharp": "2.4.5",
+        "gatsby-plugin-styled-components": "3.1.19",
+        "gatsby-source-filesystem": "2.1.48",
+        "gatsby-transformer-sharp": "2.3.14",
+        "gatsby-transformer-yaml": "2.2.24",
+        "react": "16.12.0",
+        "react-dom": "16.12.0",
+        "react-helmet": "5.2.1",
+        "styled-components": "5.0.1"
+    },
+    "scripts": {
+        "start": "gatsby develop",
+        "develop": "gatsby develop",
+        "build": "gatsby build",
+        "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    },
+    "devDependencies": {
+        "stylelint-config-recommended": "3.0.0",
+        "tailwindcss": "1.2.0"
+    }
 }
