@@ -9,17 +9,17 @@ import SocialLinks from './social-links';
 import ResumeButton from './resume-button';
 
 const ProfileCard = ({
-    profile: { profileImage, name, titles, scholastic, email, social, resume },
+  profile: { profileImage, name, titles, scholastic, email, social, resume },
 }) => (
-    <div className='profile-card' role='main'>
-        <ProfileImage profileImage={profileImage} name={name} />
-        <FullName name={name} />
-        <Title titles={titles} />
-        <Scholastic scholastic={scholastic} />
-        <Email email={email} />
-        <SocialLinks social={social} />
-        <ResumeButton resume={resume} />
-    </div>
+  <div className='profile-card' role='main'>
+    <ProfileImage profileImage={profileImage} name={name} />
+    <FullName name={name} />
+    <Title titles={titles} />
+    <Scholastic scholastic={scholastic} />
+    <Email email={email} />
+    <SocialLinks social={social} />
+    <ResumeButton resume={resume} />
+  </div>
 );
 
 export default ProfileCard;

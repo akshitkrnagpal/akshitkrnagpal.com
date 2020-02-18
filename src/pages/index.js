@@ -5,49 +5,49 @@ import { graphql, useStaticQuery } from 'gatsby';
 import ProfileCard from '../components/profile-card';
 
 const query = graphql`
-    query {
-        allData {
-            edges {
-                node {
-                    name {
-                        firstname
-                        lastname
-                    }
-                    description
-                    titles
-                    scholastic {
-                        title
-                        place
-                        link
-                    }
-                    social {
-                        facebook
-                        github
-                        linkedin
-                        twitter
-                    }
-                    email
-                    resume
-                }
-            }
+  query {
+    allData {
+      edges {
+        node {
+          name {
+            firstname
+            lastname
+          }
+          description
+          titles
+          scholastic {
+            title
+            place
+            link
+          }
+          social {
+            facebook
+            github
+            linkedin
+            twitter
+          }
+          email
+          resume
         }
+      }
     }
+  }
 `;
 
 const Root = () => {
-    const data = useStaticQuery(query);
-    const profile = data.allData.edges[0].node;
-    const { name, description } = profile;
-    return (
-        <div className='container'>
-            <Helmet
-                title={`${name.firstname} ${name.lastname}`}
-                htmlAttributes={{ lang: 'en' }}
-                meta={[{ name: 'description', content: description }]}
-            />
-            <ProfileCard profile={profile} />
-        </div>
-    );
+  const data = useStaticQuery(query);
+  const profile = data.allData.edges[0].node;
+  const { name, description } = profile;
+  return (
+    <div className='container'>
+      <Helmet
+        title={`${name.firstname} ${name.lastname}`}
+        htmlAttributes={{ lang: 'en' }}
+        meta={[{ name: 'description', content: description }]}
+      />
+      <ProfileCard profile={profile} />
+    </div>
+  );
 };
 
 export default Root;
