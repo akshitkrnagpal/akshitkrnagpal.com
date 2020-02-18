@@ -1,14 +1,10 @@
 import styled from 'styled-components';
 
 export default styled.a`
-  display: inline-block;
-  margin: 0 1rem;
+  display: inline-flex;
+  margin: 0.5rem 1rem;
   width: 2rem;
   height: 2rem;
-
-  transition: transform 0.3s ease-out;
-
-  &:not(:hover) {
-    transform: scale(0.8);
-  }
+  align-items: center;
+  justify-content: center;
 `;
