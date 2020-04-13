@@ -1,3 +1,3 @@
 # AkshitKrNagpal.com
 
-[![Actions Status](https://github.com/akshitkrnagpal/akshitkrnagpal.com/workflows/Build%20and%20Deploy/badge.svg)](https://github.com/akshitkrnagpal/akshitkrnagpal.com/actions)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f9e2d91d-cb09-4baa-8ea5-bcbc0544af8c/deploy-status)](https://app.netlify.com/sites/akshitkrnagpal/deploys)
