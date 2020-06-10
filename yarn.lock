@@ -6299,13 +6299,13 @@ gatsby-transformer-sharp@2.5.2:
     semver "^5.7.1"
     sharp "^0.25.1"
 
-gatsby-transformer-yaml@2.4.1:
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/gatsby-transformer-yaml/-/gatsby-transformer-yaml-2.4.1.tgz#30d08368b9be723d0681db08eba6ff3e2feb4772"
-  integrity sha512-wgi1POFasE81MzJ7zhS9g4jsFiQBic2twzqPYpuMH9BF311yx2w4L4PES0Y0SsPy9y+juBKoV+VL9lP8IIKh3w==
+gatsby-transformer-yaml@2.4.4:
+  version "2.4.4"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-yaml/-/gatsby-transformer-yaml-2.4.4.tgz#485c1fe8abef51faf13b142b1a31194fdf32d463"
+  integrity sha512-SjKdHJk+PM/rKwgrBElJrIw82U2mpOO34ft9nX7TwMg5T6qLV0qSKjoKNVvHuRfy4xQxSTEixjjfwfz/Z3wgVg==
   dependencies:
-    "@babel/runtime" "^7.9.6"
-    js-yaml "^3.13.1"
+    "@babel/runtime" "^7.10.2"
+    js-yaml "^3.14.0"
     lodash "^4.17.15"
     unist-util-select "^1.5.0"
 
@@ -8228,10 +8228,10 @@ js-tokens@^3.0.2:
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-3.0.2.tgz#9866df395102130e38f7f996bceb65443209c25b"
   integrity sha1-mGbfOVECEw449/mWvOtlRDIJwls=
 
-js-yaml@^3.10.0, js-yaml@^3.13.1:
-  version "3.13.1"
-  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.13.1.tgz#aff151b30bfdfa8e49e05da22e7415e9dfa37847"
-  integrity sha512-YfbcO7jXDdyj0DGxYVSlSeQNHbD7XPWvrVWeVUujrQEoZzWJIRrCPoyk6kL6IAjAG2IolMK4T0hNUe0HOUs5Jw==
+js-yaml@^3.10.0, js-yaml@^3.13.1, js-yaml@^3.14.0:
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.14.0.tgz#a7a34170f26a21bb162424d8adacb4113a69e482"
+  integrity sha512-/4IbIeHcD9VMHFqDR/gQ7EdZdLimOvW2DdcxFjdyyZ9NsbS+ccrXqVWDtab/lRl5AlUqmpBx8EhPaWR+OtY17A==
   dependencies:
     argparse "^1.0.7"
     esprima "^4.0.0"
