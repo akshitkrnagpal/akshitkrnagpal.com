@@ -6491,7 +6491,7 @@ gatsby-cli@^2.12.48:
     yargs "^15.3.1"
     yurnalist "^1.1.2"
 
-gatsby-core-utils@^1.3.5, gatsby-core-utils@^1.3.6:
+gatsby-core-utils@^1.3.6:
   version "1.3.6"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.3.6.tgz#5a001593276b0c1cc4a3c6c9a34da428e9374590"
   integrity sha512-ptd//w6MX1/hUGO2KBffSUKSYIVU3SFRM2cKXN3CMmCQvn8ul2OHCjpNY8MyZQuluWk8nRtvhjEGrl+KJtcOnw==
@@ -6542,10 +6542,10 @@ gatsby-page-utils@^0.2.10:
     lodash "^4.17.15"
     micromatch "^3.1.10"
 
-gatsby-plugin-google-analytics@2.3.4:
-  version "2.3.4"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-2.3.4.tgz#20e99318996b49436c89f6c2948ea6539a4c1a26"
-  integrity sha512-FjsHyZ1J+pxXqupG7SpCBIvxHVPWND2mYA4eK6c2i4B2d+6n60pPJd/YOqQdsxoIGLL210UOCnJpa6A7Vrd8pQ==
+gatsby-plugin-google-analytics@2.3.5:
+  version "2.3.5"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-2.3.5.tgz#a11ce7777342be7af7c22e13ecb11d83c68106c8"
+  integrity sha512-b6b09zxB+3XMs2Df0wihBlJ1OOgHvKkhYw7eR69Sk7wSZRrG9m2bBOnsmhuvBJ8U/a1lNF40S2Rjzg4eRBDqmg==
   dependencies:
     "@babel/runtime" "^7.10.2"
     minimatch "3.0.4"
