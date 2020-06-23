@@ -6491,7 +6491,7 @@ gatsby-cli@^2.12.48:
     yargs "^15.3.1"
     yurnalist "^1.1.2"
 
-gatsby-core-utils@^1.3.5, gatsby-core-utils@^1.3.6:
+gatsby-core-utils@^1.3.6:
   version "1.3.6"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.3.6.tgz#5a001593276b0c1cc4a3c6c9a34da428e9374590"
   integrity sha512-ptd//w6MX1/hUGO2KBffSUKSYIVU3SFRM2cKXN3CMmCQvn8ul2OHCjpNY8MyZQuluWk8nRtvhjEGrl+KJtcOnw==
@@ -6578,10 +6578,10 @@ gatsby-plugin-page-creator@^2.3.10:
     lodash "^4.17.15"
     micromatch "^3.1.10"
 
-gatsby-plugin-postcss@2.3.4:
-  version "2.3.4"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-postcss/-/gatsby-plugin-postcss-2.3.4.tgz#a2c8095453bbb159b3f1942459ffffced78826f9"
-  integrity sha512-EmPGBA8HQZVT+QFu7XljE/UgGt4v085Xy9A7bLV0PQlwLemumWOc9oRj9kUZkcu6uO78tHuOPHk13axpzNTJSw==
+gatsby-plugin-postcss@2.3.5:
+  version "2.3.5"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-postcss/-/gatsby-plugin-postcss-2.3.5.tgz#fb864344eb716db60aedecd46f51d6d577329066"
+  integrity sha512-AQjgo8wtCr6WWzrOv8V2yE6ZKsA0zAcUrNcpmiDXS+oo6q4TnWJrCpzJ+KtBsF0rmfNh2+yc5FBbezd7jj9Psw==
   dependencies:
     "@babel/runtime" "^7.10.2"
     postcss-loader "^3.0.0"
