@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 
 import { SocialIcon } from '../styled';
+import { useEffect } from 'react';
 
 const SocialLink = ({ innerRef, link, icon, label, ...other }) => (
   <SocialIcon
@@ -20,12 +21,19 @@ const SocialLink = ({ innerRef, link, icon, label, ...other }) => (
 const SocialLinks = ({ social }) => {
   const [socials, setSocials] = useState(Object.keys(social));
 
+  useEffect(() => {
+    if (localStorage.getItem('socials')) {
+      setSocials(JSON.parse(localStorage.getItem('socials')));
+    }
+  }, []);
+
   const onDragEnd = ({ source, destination }) => {
     if (!destination) return;
 
     setSocials(socials => {
       const [dragged] = socials.splice(source.index, 1);
       socials.splice(destination.index, 0, dragged);
+      localStorage.setItem('socials', JSON.stringify(socials));
       return socials;
     });
   };
