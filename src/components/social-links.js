@@ -18,9 +18,10 @@ const SocialLink = ({ innerRef, link, icon, label, ...other }) => (
 );
 
 const SocialLinks = ({ social }) => {
-  const initialSocials = localStorage.getItem('socials')
-    ? JSON.parse(localStorage.getItem('socials'))
-    : Object.keys(social);
+  const initialSocials =
+    localStorage && localStorage.getItem('socials')
+      ? JSON.parse(localStorage.getItem('socials'))
+      : Object.keys(social);
 
   const [socials, setSocials] = useState(initialSocials);
 
@@ -30,7 +31,7 @@ const SocialLinks = ({ social }) => {
     setSocials(socials => {
       const [dragged] = socials.splice(source.index, 1);
       socials.splice(destination.index, 0, dragged);
-      localStorage.setItem('socials', JSON.stringify(socials));
+      localStorage && localStorage.setItem('socials', JSON.stringify(socials));
       return socials;
     });
   };
