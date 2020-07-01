@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
+import createPersistedState from 'use-persisted-state';
 
 import { SocialIcon } from '../styled';
 
@@ -17,13 +18,10 @@ const SocialLink = ({ innerRef, link, icon, label, ...other }) => (
   </SocialIcon>
 );
 
-const SocialLinks = ({ social }) => {
-  const initialSocials =
-    localStorage && localStorage.getItem('socials')
-      ? JSON.parse(localStorage.getItem('socials'))
-      : Object.keys(social);
+const usePersistedState = createPersistedState('socials');
 
-  const [socials, setSocials] = useState(initialSocials);
+const SocialLinks = ({ social }) => {
+  const [socials, setSocials] = usePersistedState(Object.keys(social));
 
   const onDragEnd = ({ source, destination }) => {
     if (!destination) return;
@@ -31,8 +29,7 @@ const SocialLinks = ({ social }) => {
     setSocials(socials => {
       const [dragged] = socials.splice(source.index, 1);
       socials.splice(destination.index, 0, dragged);
-      localStorage && localStorage.setItem('socials', JSON.stringify(socials));
-      return socials;
+      return [...socials];
     });
   };
 

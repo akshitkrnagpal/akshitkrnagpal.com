@@ -26,7 +26,8 @@
         "react-beautiful-dnd": "13.0.0",
         "react-dom": "16.13.1",
         "react-helmet": "6.1.0",
-        "styled-components": "5.1.1"
+        "styled-components": "5.1.1",
+        "use-persisted-state": "^0.3.0"
     },
     "scripts": {
         "start": "gatsby develop",
