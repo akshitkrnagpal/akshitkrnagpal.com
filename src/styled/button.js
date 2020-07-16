@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import { styled } from 'linaria/react';
 
 export default styled.button`
   display: inline-block;
