@@ -2,7 +2,7 @@ name: Update Dependencies Daily
 
 on:
   schedule:
-    - cron: '35 15 * * *'
+    - cron: '0 0 * * *'
 
 jobs:
   build:
