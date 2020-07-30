@@ -12,8 +12,8 @@ jobs:
     - uses: actions/setup-node@v1
       with:
         node-version: 12
-    - run: npx ncu -u
-    - run: npm install
+    - run: npx npm-check-updates -u
+    - run: yarn install
     - uses: actions-js/push@v1.2
       with: 
         github_token: ${{ secrets.GITHUB_TOKEN }}
