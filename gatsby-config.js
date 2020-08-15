@@ -46,6 +46,10 @@ module.exports = {
         trackingId: `UA-84508219-2`,
       },
     },
+    {
+      resolve: '@bundle-analyzer/gatsby-plugin',
+      options: { token: process.env.BUNDLE_ANALYZER_TOKEN },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-remove-serviceworker`,
   ],
