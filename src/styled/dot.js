@@ -1,4 +1,4 @@
-import { styled } from 'linaria/react';
+import styled from 'styled-components';
 
 export default styled.span`
   color: #767676;

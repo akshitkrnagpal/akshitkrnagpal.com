@@ -7,6 +7,7 @@ module.exports = {
         display: 'swap',
       },
     },
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-postcss`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
@@ -46,7 +47,6 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-linaria`,
     `gatsby-plugin-remove-serviceworker`,
   ],
 };
