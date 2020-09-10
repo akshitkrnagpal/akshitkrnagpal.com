@@ -4,7 +4,11 @@ module.exports = {
     fontFamily: {
       sans: 'Muli, sans-serif',
     },
-    extend: {},
+    extend: {
+      color: {
+        light: '#767676',
+      },
+    },
   },
   variants: {},
   plugins: [],

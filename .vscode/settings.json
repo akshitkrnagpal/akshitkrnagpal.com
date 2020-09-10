@@ -1,3 +1,5 @@
 {
+  "prettier.tabWidth": 2,
+  "prettier.singleQuote": true,
   "css.validate": false
 }
