@@ -11,6 +11,7 @@ jobs:
     - uses: actions/setup-node@v1
       with:
         node-version: 12
+    - run: rm yarn.lock
     - run: npx npm-check-updates -u
     - run: yarn install
     - uses: actions-js/push@v1.2
