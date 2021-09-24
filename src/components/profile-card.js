@@ -6,10 +6,9 @@ import Title from './title';
 import Scholastic from './scholastic';
 import Email from './email';
 import SocialLinks from './social-links';
-import ResumeButton from './resume-button';
 
 const ProfileCard = ({
-  profile: { profileImage, name, titles, scholastic, email, social, resume },
+  profile: { profileImage, name, titles, scholastic, email, social },
 }) => (
   <div className='profile-card' role='main'>
     <ProfileImage profileImage={profileImage} name={name} />
@@ -18,7 +17,6 @@ const ProfileCard = ({
     <Scholastic scholastic={scholastic} />
     <Email email={email} />
     <SocialLinks social={social} />
-    <ResumeButton resume={resume} />
   </div>
 );
 

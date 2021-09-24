@@ -1,4 +1,3 @@
-export { default as Button } from './button';
 export { default as Dot } from './dot';
 export { default as ExternalLink } from './external-link';
 export { default as Text } from './text';
