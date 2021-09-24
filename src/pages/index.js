@@ -27,7 +27,6 @@ const query = graphql`
             twitter
           }
           email
-          resume
         }
       }
     }
