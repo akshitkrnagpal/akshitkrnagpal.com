@@ -1,30 +1,26 @@
 import React from 'react';
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 import { graphql, useStaticQuery } from 'gatsby';
 
-const query = graphql`
-  query {
-    file(relativePath: { eq: "profile-image.jpeg" }) {
-      childImageSharp {
-        fixed(width: 175, height: 175) {
-          ...GatsbyImageSharpFixed
-        }
-      }
+const query = graphql`{
+  file(relativePath: {eq: "profile-image.jpeg"}) {
+    childImageSharp {
+      gatsbyImageData(width: 175, height: 175, layout: FIXED)
     }
   }
+}
 `;
 
 const ProfileImage = ({ name: { firstname, lastname } }) => {
   const data = useStaticQuery(query);
-  const profileImage = data.file.childImageSharp.fixed;
+  const profileImage = data.file.childImageSharp.gatsbyImageData;
 
   return (
     <div className='row'>
-      <Img
+      <GatsbyImage
+        image={profileImage}
         className='profile-image'
-        fixed={profileImage}
-        alt={`${firstname} ${lastname}`}
-      />
+        alt={`${firstname} ${lastname}`} />
     </div>
   );
 };
