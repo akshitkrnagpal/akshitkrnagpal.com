@@ -3,30 +3,29 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 import createPersistedState from 'use-persisted-state';
 
-import { SocialIcon } from '../styled';
-
 const SocialLink = ({ innerRef, link, icon, label, ...other }) => (
-  <SocialIcon
+  <a
+    className="w-8 h-8"
     ref={innerRef}
     aria-label={label}
     href={link}
-    target='_blank'
-    rel='noopener noreferrer'
+    target="_blank"
+    rel="noopener noreferrer"
     {...other}
   >
-    <FontAwesomeIcon icon={['fab', icon]} className='text-2xl' fixedWidth />
-  </SocialIcon>
+    <FontAwesomeIcon icon={['fab', icon]} className="text-2xl" fixedWidth />
+  </a>
 );
 
 const usePersistedState = createPersistedState('socials');
 
 const SocialLinks = ({ social }) => {
-  const [socials, setSocials] = usePersistedState(Object.keys(social));
+  const [socials, setSocials] = usePersistedState(social);
 
   const onDragEnd = ({ source, destination }) => {
     if (!destination) return;
 
-    setSocials(socials => {
+    setSocials((socials) => {
       const [dragged] = socials.splice(source.index, 1);
       socials.splice(destination.index, 0, dragged);
       return [...socials];
@@ -35,17 +34,21 @@ const SocialLinks = ({ social }) => {
 
   return (
     <DragDropContext onDragEnd={onDragEnd}>
-      <Droppable droppableId='socials' direction='horizontal'>
+      <Droppable droppableId="socials" direction="horizontal">
         {({ innerRef, droppableProps, placeholder }) => (
-          <div ref={innerRef} {...droppableProps} className='row'>
-            {socials.map((website, index) => (
+          <div
+            ref={innerRef}
+            {...droppableProps}
+            className="flex space-x-4 justify-center py-2"
+          >
+            {socials.map(({ website, url }, index) => (
               <Draggable key={website} draggableId={website} index={index}>
                 {({ innerRef, draggableProps, dragHandleProps }) => (
                   <SocialLink
                     innerRef={innerRef}
                     {...draggableProps}
                     {...dragHandleProps}
-                    link={social[website]}
+                    link={url}
                     label={website}
                     icon={website}
                   />

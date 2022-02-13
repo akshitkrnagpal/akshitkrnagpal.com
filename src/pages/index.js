@@ -1,32 +1,24 @@
+import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { graphql, useStaticQuery } from 'gatsby';
-
 import ProfileCard from '../components/profile-card';
 
 const query = graphql`
   query {
-    allData {
-      edges {
-        node {
-          name {
-            firstname
-            lastname
-          }
-          description
-          titles
-          scholastic {
-            title
-            place
-            link
-          }
-          social {
-            facebook
-            github
-            linkedin
-            twitter
-          }
-          email
+    graphCmsProfile {
+      id
+      name
+      headline
+      email
+      summary
+      photo {
+        gatsbyImageData(placeholder: BLURRED, width: 200, height: 200)
+      }
+      social {
+        ... on GraphCMS_Social {
+          id
+          website
+          url
         }
       }
     }
@@ -35,16 +27,15 @@ const query = graphql`
 
 const Root = () => {
   const data = useStaticQuery(query);
-  const profile = data.allData.edges[0].node;
-  const { name, description } = profile;
+  const { name, headline, summary } = data.graphCmsProfile;
   return (
-    <div className='container'>
+    <div className="container">
       <Helmet
-        title={`${name.firstname} ${name.lastname}`}
+        title={`${name} | ${headline}`}
         htmlAttributes={{ lang: 'en' }}
-        meta={[{ name: 'description', content: description }]}
+        meta={[{ name: 'description', content: summary }]}
       />
-      <ProfileCard profile={profile} />
+      <ProfileCard profile={data.graphCmsProfile} />
     </div>
   );
 };

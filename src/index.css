@@ -3,35 +3,35 @@
 @tailwind utilities;
 
 html {
-    @apply font-sans;
+  @apply font-sans;
 }
 
 body > #___gatsby {
-    @apply bg-white;
+  @apply bg-white;
 }
 
 .container {
-    @apply min-h-screen p-1 flex items-center justify-center mx-auto;
+  @apply min-h-screen p-1 flex items-center justify-center mx-auto;
 }
 
 .row {
-    @apply my-4 flex justify-center;
+  @apply my-4 flex justify-center;
 }
 
 .profile-image {
-    @apply mx-auto my-0 rounded-full;
+  @apply mx-auto my-0 rounded-full;
 }
 
 @screen sm {
-    .profile-card {
-        @apply max-w-sm;
-    }
+  .profile-card {
+    @apply max-w-sm;
+  }
 }
 
 .dark-mode {
-    filter: invert(1) hue-rotate(180deg);
+  filter: invert(1) hue-rotate(180deg);
 }
 
 .dark-mode img {
-    filter: invert(1) hue-rotate(180deg);
+  filter: invert(1) hue-rotate(180deg);
 }

@@ -1,23 +1,31 @@
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import React from 'react';
-
-import ProfileImage from './profile-image';
-import FullName from './full-name';
-import Title from './title';
-import Scholastic from './scholastic';
-import Email from './email';
 import SocialLinks from './social-links';
 
-const ProfileCard = ({
-  profile: { profileImage, name, titles, scholastic, email, social },
-}) => (
-  <div className='profile-card' role='main'>
-    <ProfileImage profileImage={profileImage} name={name} />
-    <FullName name={name} />
-    <Title titles={titles} />
-    <Scholastic scholastic={scholastic} />
-    <Email email={email} />
-    <SocialLinks social={social} />
-  </div>
-);
-
+const ProfileCard = ({ profile }) => {
+  const { photo, name, headline, email, social, summary } = profile;
+  const image = getImage(photo.gatsbyImageData);
+  return (
+    <main className="grid justify-center sm:max-w-sm gap-4">
+      <GatsbyImage
+        className="mx-auto my-0 rounded-full"
+        image={image}
+        alt={name}
+      />
+      <h1 className="text-4xl text-center">{name}</h1>
+      <h2 className="text-xl text-center">{headline}</h2>
+      <p className="text-base text-center text-slate-500">{summary}</p>
+      <a
+        className="text-base text-center text-slate-500"
+        aria-label={email}
+        href={`mailto:${email}`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {email}
+      </a>
+      <SocialLinks social={social} />
+    </main>
+  );
+};
 export default ProfileCard;

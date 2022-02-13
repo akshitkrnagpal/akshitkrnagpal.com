@@ -1,3 +1,7 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   plugins: [
     {
@@ -7,9 +11,10 @@ module.exports = {
         display: 'swap',
       },
     },
-    `gatsby-plugin-styled-components`,
     `gatsby-plugin-postcss`,
+    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -23,27 +28,15 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-transformer-yaml`,
-      options: {
-        typeName: `data`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `./src/data/`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `./src/images/`,
-      },
-    },
-    {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         trackingIds: [`UA-84508219-2`],
+      },
+    },
+    {
+      resolve: 'gatsby-source-graphcms',
+      options: {
+        endpoint: process.env.GRAPHCMS_ENDPOINT,
       },
     },
     `gatsby-transformer-sharp`,
