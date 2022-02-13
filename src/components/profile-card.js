@@ -1,5 +1,6 @@
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import React from 'react';
+import Markdown from 'markdown-to-jsx';
 import SocialLinks from './social-links';
 
 const ProfileCard = ({ profile }) => {
@@ -14,9 +15,23 @@ const ProfileCard = ({ profile }) => {
       />
       <h1 className="text-4xl text-center">{name}</h1>
       <h2 className="text-xl text-center">{headline}</h2>
-      <p className="text-base text-center text-slate-500">{summary}</p>
-      <a
+      <Markdown
         className="text-base text-center text-slate-500"
+        options={{
+          overrides: {
+            a: {
+              component: 'a',
+              props: {
+                className: 'underline',
+              },
+            },
+          },
+        }}
+      >
+        {summary}
+      </Markdown>
+      <a
+        className="text-base text-center text-slate-500 hover:underline"
         aria-label={email}
         href={`mailto:${email}`}
         target="_blank"

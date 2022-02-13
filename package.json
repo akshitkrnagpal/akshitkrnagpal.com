@@ -19,6 +19,7 @@
         "gatsby-plugin-sharp": "^4.7.0",
         "gatsby-source-graphcms": "^2.8.0",
         "gatsby-transformer-sharp": "^4.7.0",
+        "markdown-to-jsx": "^7.1.6",
         "postcss": "^8.4.6",
         "react": "^17.0.2",
         "react-beautiful-dnd": "^13.1.0",
