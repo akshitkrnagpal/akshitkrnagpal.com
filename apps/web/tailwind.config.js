@@ -5,6 +5,12 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    container: {
+      center: true,
+    },
+    fontFamily: {
+      raleway: ["Raleway"],
+    },
     extend: {},
   },
   plugins: [],
