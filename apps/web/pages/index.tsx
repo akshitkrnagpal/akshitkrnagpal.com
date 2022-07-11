@@ -33,16 +33,19 @@ const Home: NextPage = () => {
               <SocialIcon
                 bgColor="transparent"
                 fgColor="black"
+                target="_blank"
                 url="https://www.linkedin.com/in/akshitkrnagpal"
               />
               <SocialIcon
                 bgColor="transparent"
                 fgColor="black"
+                target="_blank"
                 url="https://www.github.com/akshitkrnagpal"
               />
               <SocialIcon
                 bgColor="transparent"
                 fgColor="black"
+                target="_blank"
                 url="https://www.twitter.com/akshitkrnagpal"
               />
             </div>
