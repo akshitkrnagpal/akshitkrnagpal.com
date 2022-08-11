@@ -1,9 +1,11 @@
 @tailwind base;
 
 @layer base {
-    html, body, #__next {
-        @apply h-full;
-    }
+  html,
+  body,
+  #__next {
+    @apply h-full;
+  }
 }
 
 @tailwind components;

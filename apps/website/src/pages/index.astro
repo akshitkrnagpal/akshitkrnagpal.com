@@ -1,70 +1,64 @@
 ---
 import { SocialIcon } from "react-social-icons";
-import BaseLayout from '../layouts/base.astro'
-import image from '../images/image.webp'
+import BaseLayout from "../layouts/base.astro";
+import image from "../images/image.webp";
 ---
+
 <BaseLayout>
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Akshit Kr Nagpal | Software Engineer</title>
-        <meta name="description" content="Software Engineer Developer" />
-	</head>
-	<body>
-		<main class="flex items-center justify-center h-full font-raleway">
-			<div class="flex flex-col-reverse md:flex-row gap-4 max-w-3xl">
-			  <div class="flex-1 px-8 space-y-4 text-center md:text-left">
-				<div class="flex flex-col justify-center">
-				  <h1 class="text-4xl font-semibold text-slate-800 tracking-wide mt-8">
-					Akshit Kr Nagpal
-				  </h1>
-				  <h2 class="text-3xl text-slate-600 tracking-wide">
-					Software Engineer
-				  </h2>
-				  <p class="text-base leading-relaxed tracking-wide mt-4">
-					A self-taught Software Engineer who started building websites at
-					the age of 14 (nearly a decade ago). With a passion for
-					full-stack development and a history of delivering high-quality
-					code at high velocity. Open source hobbyist.
-				  </p>
-				</div>
-				<div class="space-x-4">
-				  <SocialIcon
-					bgColor="transparent"
-					fgColor="black"
-					target="_blank"
-					url="https://www.linkedin.com/in/akshitkrnagpal"
-				  />
-				  <SocialIcon
-					bgColor="transparent"
-					fgColor="black"
-					target="_blank"
-					url="https://www.github.com/akshitkrnagpal"
-				  />
-				  <SocialIcon
-					bgColor="transparent"
-					fgColor="black"
-					target="_blank"
-					url="https://www.twitter.com/akshitkrnagpal"
-				  />
-				</div>
-			  </div>
-			  <div class="flex-1 px-8">
-				<figure class="flex flex-col max-w-96">
-				  <img
-					class="rounded-full md:rounded-md aspect-square md:aspect-auto object-cover"
-					src={image}
-					width={750}
-					height={938}
-					alt="Akshit Kr Nagpal"
-				  />
-				  <figcaption class="hidden md:block text-slate-500 text-center text-sm py-1">
-					Utrecht, Netherlands.
-				  </figcaption>
-				</figure>
-			  </div>
-			</div>
-		  </main>
-	</body>
+  <main class="flex items-center justify-center h-full font-raleway">
+    <div class="flex flex-col-reverse md:flex-row gap-4 max-w-3xl">
+      <div class="flex-1 px-8 space-y-4 text-center md:text-left">
+        <div class="flex flex-col justify-center">
+          <h1 class="text-4xl font-semibold text-slate-800 tracking-wide mt-8">
+            Akshit Kr Nagpal
+          </h1>
+          <h2 class="text-3xl text-slate-600 tracking-wide">
+            Software Engineer
+          </h2>
+          <p class="text-base leading-relaxed tracking-wide mt-4">
+            A self-taught Software Engineer who started building websites at the
+            age of 14 (nearly a decade ago). With a passion for full-stack
+            development and a history of delivering high-quality code at high
+            velocity. Open source hobbyist.
+          </p>
+        </div>
+        <div class="space-x-4">
+          <SocialIcon
+            bgColor="transparent"
+            fgColor="black"
+            target="_blank"
+            url="https://www.linkedin.com/in/akshitkrnagpal"
+          />
+          <SocialIcon
+            bgColor="transparent"
+            fgColor="black"
+            target="_blank"
+            url="https://www.github.com/akshitkrnagpal"
+          />
+          <SocialIcon
+            bgColor="transparent"
+            fgColor="black"
+            target="_blank"
+            url="https://www.twitter.com/akshitkrnagpal"
+          />
+        </div>
+      </div>
+      <div class="flex-1 px-8">
+        <figure class="flex flex-col max-w-96">
+          <img
+            class="rounded-full md:rounded-md aspect-square md:aspect-auto object-cover"
+            src={image}
+            width={750}
+            height={938}
+            alt="Akshit Kr Nagpal"
+          />
+          <figcaption
+            class="hidden md:block text-slate-500 text-center text-sm py-1"
+          >
+            Utrecht, Netherlands.
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </main>
 </BaseLayout>
