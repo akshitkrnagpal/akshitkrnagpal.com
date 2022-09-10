@@ -2,7 +2,7 @@ import { defineConfig } from "astro/config";
 import react from "@astrojs/react";
 import partytown from "@astrojs/partytown";
 import tailwind from "@astrojs/tailwind";
-import compress from "astro-compress";
+// import compress from "astro-compress";
 
 import image from "@astrojs/image";
 
@@ -15,7 +15,7 @@ export default defineConfig({
         applyBaseStyles: false,
       },
     }),
-    compress(),
+    // compress(),
     partytown(),
     image(),
   ],
