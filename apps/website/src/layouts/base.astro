@@ -5,7 +5,7 @@ import "@styles/globals.css";
 import { SEO } from "astro-seo";
 import { getImage } from "@astrojs/image";
 import image from "@images/image.webp";
-const { src } = await getImage({ src: image });
+const { src } = await getImage({ src: image, aspectRatio: 1.91 / 1 });
 ---
 
 <html lang="en">
@@ -27,6 +27,7 @@ const { src } = await getImage({ src: image });
       }}
       extend={{
         meta: [
+          { name: "twitter:card", content: "summary_large_image" },
           { name: "twitter:site", content: "@akshitkrnagpal" },
           { name: "twitter:creator", content: "@akshitkrnagpal" },
         ],
