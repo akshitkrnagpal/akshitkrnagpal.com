@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "@fontsource/raleway": "^4.5.10",
+    "astro-seo": "^0.6.0",
     "react-social-icons": "^5.14.0"
   }
 }

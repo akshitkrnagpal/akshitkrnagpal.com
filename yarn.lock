@@ -713,6 +713,11 @@ astro-compress@^1.0.7:
     svgo "2.8.0"
     terser "5.15.0"
 
+astro-seo@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/astro-seo/-/astro-seo-0.6.0.tgz#d46f98baa929f2111dd702662806fa741a9ac02a"
+  integrity sha512-nR+dJlAyQhX6s0oAmbBqPq3KCZax/zVAerFsclGiJQ2znOkS/7L+RGjziS4M9Q3OQxm3FMfqIKHp9Ns73Q81ww==
+
 astro@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/astro/-/astro-1.0.2.tgz#c7644f4b561bd5e840ead32f003fe26f4572b385"
