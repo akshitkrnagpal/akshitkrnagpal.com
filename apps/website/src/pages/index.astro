@@ -1,4 +1,5 @@
 ---
+import { Image } from "@astrojs/image/components";
 import image from "@images/image.webp";
 import BaseLayout from "@layouts/base.astro";
 import { SocialIcon } from "react-social-icons";
@@ -45,11 +46,12 @@ import { SocialIcon } from "react-social-icons";
       </div>
       <div class="flex-1 px-8">
         <figure class="flex flex-col max-w-96">
-          <img
+          <Image
             class="rounded-full md:rounded-md aspect-square md:aspect-auto object-cover"
             src={image}
             width={750}
             height={938}
+            aspectRatio={1}
             alt="Akshit Kr Nagpal"
           />
           <figcaption

@@ -1,8 +1,10 @@
 ---
+import { getImage } from "@astrojs/image";
 import "@fontsource/raleway/100.css";
 import "@fontsource/raleway/500.css";
-import "@styles/globals.css";
 import image from "@images/image.webp";
+import "@styles/globals.css";
+const { src } = await getImage({ src: image });
 ---
 
 <html lang="en">
@@ -20,12 +22,13 @@ import image from "@images/image.webp";
       name="twitter:description"
       content="A self-taught Software Engineer who started building websites at the age of 14 (nearly a decade ago). With a passion for full-stack development and a history of delivering high-quality code at high velocity. Open source hobbyist."
     />
-    <meta name="twitter:image" content={image} />
+    <meta name="twitter:image" content={src} />
     <script
       id="cookieyes"
       type="text/partytown"
       src="https://cdn-cookieyes.com/client_data/04a83b25bb08eac7da8048df/script.js"
-    ></script>
+    >export { };
+
   </head>
   <body>
     <slot />

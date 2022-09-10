@@ -4,6 +4,8 @@ import partytown from "@astrojs/partytown";
 import tailwind from "@astrojs/tailwind";
 import compress from "astro-compress";
 
+import image from "@astrojs/image";
+
 // https://astro.build/config
 export default defineConfig({
   integrations: [
@@ -15,5 +17,6 @@ export default defineConfig({
     }),
     compress(),
     partytown(),
+    image(),
   ],
 });
