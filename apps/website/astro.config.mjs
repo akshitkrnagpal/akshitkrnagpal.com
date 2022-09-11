@@ -1,10 +1,9 @@
-import { defineConfig } from "astro/config";
-import react from "@astrojs/react";
-import partytown from "@astrojs/partytown";
-import tailwind from "@astrojs/tailwind";
-// import compress from "astro-compress";
-
 import image from "@astrojs/image";
+import partytown from "@astrojs/partytown";
+import react from "@astrojs/react";
+import tailwind from "@astrojs/tailwind";
+import compress from "astro-compress";
+import { defineConfig } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
@@ -15,7 +14,7 @@ export default defineConfig({
         applyBaseStyles: false,
       },
     }),
-    // compress(),
+    compress(),
     partytown(),
     image(),
   ],
