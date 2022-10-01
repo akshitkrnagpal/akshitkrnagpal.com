@@ -5,6 +5,12 @@ import "@styles/globals.css";
 import { SEO } from "astro-seo";
 import { getImage } from "@astrojs/image";
 import image from "@images/image.webp";
+
+const title = "Akshit Kr Nagpal | Software Engineer";
+const description =
+  "A self-taught Software Engineer who started building websites at the age of 14 (nearly a decade ago). With a passion for full-stack development and a history of delivering high-quality code at high velocity. Open source hobbyist.";
+const url = "https://www.akshitkrnagpal.com";
+const twitterHandle = "@akshitkrnagpal";
 const { src } = await getImage({ src: image, aspectRatio: 1.91 / 1 });
 ---
 
@@ -14,22 +20,26 @@ const { src } = await getImage({ src: image, aspectRatio: 1.91 / 1 });
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <SEO
-      title="Akshit Kr Nagpal | Software Engineer"
-      description="A self-taught Software Engineer who started building websites at the age of 14 (nearly a decade ago). With a passion for full-stack development and a history of delivering high-quality code at high velocity. Open source hobbyist."
-      canonical="https://www.akshitkrnagpal.com"
+      canonical={url}
+      title={title}
+      description={description}
       openGraph={{
         basic: {
-          title: "Akshit Kr Nagpal | Software Engineer",
           type: "website",
-          image: `https://www.akshitkrnagpal.com${src}`,
-          url: "https://www.akshitkrnagpal.com",
+          title,
+          url,
+          image: `${url}${src}`,
         },
       }}
       extend={{
         meta: [
+          { name: "twitter:title", content: title },
+          { name: "twitter:description", content: description },
+          { name: "twitter:image", content: `${url}${src}` },
+          { name: "twitter:image:alt", content: title },
           { name: "twitter:card", content: "summary_large_image" },
-          { name: "twitter:site", content: "@akshitkrnagpal" },
-          { name: "twitter:creator", content: "@akshitkrnagpal" },
+          { name: "twitter:site", content: twitterHandle },
+          { name: "twitter:creator", content: twitterHandle },
         ],
       }}
     />
