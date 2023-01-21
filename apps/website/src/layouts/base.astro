@@ -10,6 +10,18 @@ const title = "Akshit Kr Nagpal | Software Engineer";
 const description =
   "My name is Akshit Kr Nagpal and I've been a self-taught Software Engineer for about a decade now.";
 const url = "https://www.akshitkrnagpal.com";
+const keywords = [
+  "Akshit",
+  "Skilled software engineer",
+  "Next.js",
+  "Next.js development",
+  "full-stack developer",
+  "open-source",
+  "website development",
+  "software development",
+  "code quality",
+  "fast-paced",
+];
 const twitterHandle = "@akshitkrnagpal";
 const { src } = await getImage({ src: image, aspectRatio: 1.91 / 1 });
 ---
@@ -40,6 +52,7 @@ const { src } = await getImage({ src: image, aspectRatio: 1.91 / 1 });
           { name: "twitter:card", content: "summary_large_image" },
           { name: "twitter:site", content: twitterHandle },
           { name: "twitter:creator", content: twitterHandle },
+          { name: "keywords", content: keywords.join(", ") },
         ],
       }}
     />
