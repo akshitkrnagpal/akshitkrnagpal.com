@@ -5,7 +5,6 @@ import tailwind from "@astrojs/tailwind";
 import compress from "astro-compress";
 import { defineConfig } from "astro/config";
 
-// https://astro.build/config
 export default defineConfig({
   integrations: [
     react(),
@@ -15,7 +14,11 @@ export default defineConfig({
       },
     }),
     compress(),
-    partytown(),
-    image(),
+    partytown({
+      config: { forward: ["dataLayer.push"] },
+    }),
+    image({
+      serviceEntryPoint: "@astrojs/image/sharp",
+    }),
   ],
 });
