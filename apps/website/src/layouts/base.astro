@@ -4,7 +4,7 @@ import "@fontsource/raleway/500.css";
 import "@styles/globals.css";
 import { SEO } from "astro-seo";
 import { getImage } from "@astrojs/image";
-import image from "@images/image.jpeg";
+import image from "@images/image.png";
 
 const title = "Akshit Kr Nagpal | Software Engineer";
 const description =
@@ -23,7 +23,11 @@ const keywords = [
   "fast-paced",
 ];
 const twitterHandle = "@akshitkrnagpal";
-const { src } = await getImage({ src: image, aspectRatio: 1.91 / 1 });
+const { src } = await getImage({
+  src: image,
+  aspectRatio: 1.91 / 1,
+  alt: "Akshit Kr Nagpal",
+});
 ---
 
 <html lang="en">

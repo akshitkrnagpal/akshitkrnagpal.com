@@ -1,6 +1,6 @@
 ---
 import { Picture } from "@astrojs/image/components";
-import image from "@images/image.jpeg";
+import image from "@images/image.png";
 import BaseLayout from "@layouts/base.astro";
 import { SocialIcon } from "react-social-icons";
 ---
@@ -59,9 +59,12 @@ import { SocialIcon } from "react-social-icons";
             loading="eager"
           />
           <figcaption
-            class="hidden py-1 text-center text-sm text-slate-500 md:block"
+            class="hidden justify-center space-x-1 py-1 text-center text-sm text-slate-500 md:flex"
           >
-            Akshit Kr Nagpal
+            <a class="text-black underline" href="https://www.midjourney.com/">
+              Midjourney
+            </a>
+            <span> thinks I look like this.</span>
           </figcaption>
         </figure>
       </div>
