@@ -1,5 +1,5 @@
 {
-  "name": "@example/minimal",
+  "name": "@akshitkrnagpal/astro-website",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -10,7 +10,7 @@
     "astro": "astro"
   },
   "devDependencies": {
-    "astro-compress": "^1.0.7",
+    "astro-compress": "^2.0.15",
     "prettier": "^2.7.1",
     "prettier-plugin-astro": "^0.5.0",
     "prettier-plugin-tailwindcss": "^0.2.8",
