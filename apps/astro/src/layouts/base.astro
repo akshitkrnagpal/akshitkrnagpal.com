@@ -6,23 +6,8 @@ import { SEO } from "astro-seo";
 import { getImage } from "@astrojs/image";
 import image from "@images/image.png";
 
-const title = "Akshit Kr Nagpal | Software Engineer";
-const description =
-  "My name is Akshit Kr Nagpal and I've been a self-taught Software Engineer for about a decade now.";
-const url = "https://www.akshitkrnagpal.com";
-const keywords = [
-  "Akshit",
-  "Skilled software engineer",
-  "Next.js",
-  "Next.js development",
-  "full-stack developer",
-  "open-source",
-  "website development",
-  "software development",
-  "code quality",
-  "fast-paced",
-];
-const twitterHandle = "@akshitkrnagpal";
+import { title, description, url, keywords, twitterHandle } from "@akshitkrnagpal/data";
+
 const { src } = await getImage({
   src: image,
   aspectRatio: 1.91 / 1,
