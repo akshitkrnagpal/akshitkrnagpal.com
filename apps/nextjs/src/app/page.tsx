@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 
 import { SocialIcon } from "react-social-icons";
 import image from "@/images/image.png";
+import { title } from "@akshitkrnagpal/data";
 
 export default function Home() {
   return (
@@ -24,7 +25,7 @@ export default function Home() {
           className="flex-1 space-y-4 px-8 text-center"
         >
           <div className="flex flex-col justify-center">
-            <h1 className="sr-only">Akshit Kr Nagpal</h1>
+            <h1 className="sr-only">{title}</h1>
             <h2 className="text-2xl tracking-wide text-slate-600 sm:text-3xl">
               Hey there!
             </h2>
