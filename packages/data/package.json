@@ -8,8 +8,8 @@
     "dist"
   ],
   "scripts": {
-    "dev": "tsup src/index.ts --format cjs --dts-resolve --watch",
-    "build": "tsup src/index.ts --format cjs --dts-resolve"
+    "dev": "tsup src/index.ts --format cjs,esm --dts-resolve --watch",
+    "build": "tsup src/index.ts --format cjs,esm --dts-resolve"
   },
   "devDependencies": {
     "tsup": "^7.2.0"
