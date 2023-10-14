@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 import { SocialIcon } from "react-social-icons";
 import image from "@/images/image.png";
@@ -6,8 +9,20 @@ import image from "@/images/image.png";
 export default function Home() {
   return (
     <main className="flex h-full items-center justify-center">
-      <div className="flex max-w-3xl flex-col-reverse gap-4 md:flex-row">
-        <div className="flex-1 space-y-4 px-8 text-center md:text-left">
+      <div className="flex max-w-3xl flex-col-reverse gap-4">
+        <motion.div
+          initial={{
+            opacity: 0,
+          }}
+          animate={{
+            opacity: 1,
+          }}
+          transition={{
+            duration: 0.5,
+            delay: 0.5,
+          }}
+          className="flex-1 space-y-4 px-8 text-center"
+        >
           <div className="flex flex-col justify-center">
             <h2 className="text-2xl tracking-wide text-slate-600 sm:text-3xl">
               Hey there!
@@ -44,27 +59,29 @@ export default function Home() {
               url="https://www.twitter.com/akshitkrnagpal"
             />
           </div>
-        </div>
+        </motion.div>
         <div className="flex-1 px-8">
-          <figure className="flex flex-col">
+          <motion.figure
+            initial={{
+              scale: 0.5,
+              opacity: 0,
+            }}
+            animate={{
+              opacity: 1,
+              scale: 1,
+            }}
+            transition={{ duration: 0.5 }}
+            className="mx-auto flex w-64 flex-col"
+          >
             <Image
-              className="aspect-square overflow-hidden rounded-full object-cover md:aspect-auto md:rounded-md"
+              className="aspect-square overflow-hidden rounded-full object-cover"
               src={image}
               width={840}
               height={936}
               alt="Akshit Kr Nagpal"
               priority
             />
-            <figcaption className="hidden justify-center space-x-1 py-1 text-center text-sm text-slate-500 md:flex">
-              <a
-                className="text-black underline"
-                href="https://www.midjourney.com/"
-              >
-                Midjourney
-              </a>
-              <span> thinks I look like this.</span>
-            </figcaption>
-          </figure>
+          </motion.figure>
         </div>
       </div>
     </main>
