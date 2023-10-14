@@ -9,8 +9,8 @@ import { title } from "@akshitkrnagpal/data";
 
 export default function Home() {
   return (
-    <main className="flex h-full items-center justify-center">
-      <div className="flex max-w-3xl flex-col-reverse gap-4">
+    <main className="flex flex-col min-h-full items-center justify-center">
+      <section className="flex max-w-3xl h-full flex-col-reverse gap-4 py-12">
         <motion.div
           initial={{
             opacity: 0,
@@ -29,7 +29,7 @@ export default function Home() {
             <h2 className="text-2xl tracking-wide text-slate-600 sm:text-3xl">
               Hey there!
             </h2>
-            <p className="mt-4 text-sm leading-relaxed tracking-wide sm:text-base">
+            <p className="mt-4 text-sm leading-relaxed tracking-wider sm:text-base">
               My name is <span className="font-bold">Akshit Kr Nagpal</span> and
               I've been a self-taught Software Engineer for about a decade now.
               I started building websites when I was just{" "}
@@ -83,7 +83,7 @@ export default function Home() {
             />
           </motion.figure>
         </div>
-      </div>
+      </section>
     </main>
   );
 }

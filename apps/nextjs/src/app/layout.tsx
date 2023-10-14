@@ -1,9 +1,9 @@
 import { title, description } from "@akshitkrnagpal/data";
 import "@/app/globals.css";
 import type { Metadata } from "next";
-import { Raleway } from "next/font/google";
+import { Acme } from "next/font/google";
 
-const font = Raleway({ subsets: ["latin"] });
+const font = Acme({ weight: "400", subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
   title,
