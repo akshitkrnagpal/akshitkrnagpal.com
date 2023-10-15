@@ -1,6 +1,6 @@
 export const title = "Akshit Kr Nagpal | Software Engineer";
 export const description =
-  "My name is Akshit Kr Nagpal and I've been a self-taught Software Engineer for about a decade now.";
+  "My name is Akshit Kr Nagpal and I've been a self-taught Software Engineer for more than a decade now.";
 export const url = "https://www.akshitkrnagpal.com";
 export const keywords = [
   "Akshit",

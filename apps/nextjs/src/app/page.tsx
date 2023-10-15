@@ -49,8 +49,8 @@ export default function Home() {
             </h2>
             <p className="mt-4 text-sm leading-relaxed tracking-wider sm:text-base">
               My name is <span className="font-bold">Akshit Kr Nagpal</span> and
-              I've been a self-taught Software Engineer for about a decade now.
-              I started building websites when I was just{" "}
+              I've been a self-taught Software Engineer for more than a decade
+              now. I started building websites when I was just{" "}
               <span className="italic">14</span> and I've always been really
               passionate about full-stack development. I'm known for my ability
               to deliver high-quality code at a fast pace and I'm also an open
