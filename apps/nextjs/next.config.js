@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  images: {
+    imageSizes: [256, 512],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

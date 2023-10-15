@@ -90,6 +90,7 @@ export default function Home() {
             <Image
               className="aspect-square overflow-hidden rounded-full object-cover"
               src={image}
+              sizes="256px"
               alt="Akshit Kr Nagpal"
               priority
             />
