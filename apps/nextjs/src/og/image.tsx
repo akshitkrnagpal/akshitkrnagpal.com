@@ -4,7 +4,14 @@ import { fetchGoogleFonts } from "vercel-og-google-fonts";
 
 export const runtime = "edge";
 
-export async function GET(request: Request) {
+export const contentType = "image/png";
+
+export const size = {
+  width: 1200,
+  height: 630,
+};
+
+export default async function Image() {
   const image = await getImageArrayBuffer(
     new URL("@/images/image.jpg", import.meta.url)
   );
