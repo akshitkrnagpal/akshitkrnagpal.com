@@ -5,16 +5,18 @@
   "scripts": {
     "dev": "next dev -p 3001",
     "build": "next build",
+    "analyze": "ANALYZE=true next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "@akshitkrnagpal/data": "*",
+    "@next/bundle-analyzer": "^13.5.4",
     "framer-motion": "^10.16.4",
     "next": "13.5.4",
     "react": "^18",
     "react-dom": "^18",
-    "react-social-icons": "^5.14.0",
+    "react-social-icons": "^6.4.0",
     "vercel-og-google-fonts": "*"
   },
   "devDependencies": {
