@@ -2,8 +2,6 @@ import { getImageArrayBuffer } from "@/utils/image";
 import { ImageResponse } from "next/server";
 import { fetchGoogleFonts } from "vercel-og-google-fonts";
 
-export const runtime = "edge";
-
 export const contentType = "image/png";
 
 export const size = {
