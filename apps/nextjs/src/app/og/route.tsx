@@ -6,7 +6,7 @@ export const runtime = "edge";
 
 export async function GET(request: Request) {
   const image = await getImageArrayBuffer(
-    new URL("../../images/image.png", import.meta.url)
+    new URL("@/images/image.jpg", import.meta.url)
   );
 
   return new ImageResponse(

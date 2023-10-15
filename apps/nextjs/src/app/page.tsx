@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 import { SocialIcon } from "react-social-icons";
-import image from "@/images/image.png";
+import image from "@/images/image.jpg";
 import { title } from "@akshitkrnagpal/data";
 
 export default function Home() {
