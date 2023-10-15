@@ -10,15 +10,25 @@ import { title } from "@akshitkrnagpal/data";
 export default function Home() {
   return (
     <main className="flex flex-col min-h-full items-center justify-center">
-      <section className="flex max-w-3xl h-full flex-col-reverse gap-4 py-12">
+      <motion.section
+        initial={{
+          y: 50,
+        }}
+        animate={{
+          y: -50,
+        }}
+        transition={{
+          duration: 0.5,
+          delay: 0.5,
+        }}
+        className="flex max-w-3xl h-full flex-col-reverse gap-4 py-12"
+      >
         <motion.div
           initial={{
             opacity: 0,
-            y: 50,
           }}
           animate={{
             opacity: 1,
-            y: 0,
           }}
           transition={{
             duration: 0.5,
@@ -85,7 +95,7 @@ export default function Home() {
             />
           </motion.figure>
         </div>
-      </section>
+      </motion.section>
     </main>
   );
 }
