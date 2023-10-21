@@ -8,6 +8,16 @@ const font = Acme({ weight: "400", subsets: ["latin"], display: "swap" });
 export const metadata: Metadata = {
   title,
   description,
+  openGraph: {
+    type: "website",
+    title,
+    url: "https://www.akshitkrnagpal.com",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@akshitkrnagpal",
+    creator: "@akshitkrnagpal",
+  },
 };
 
 export default function RootLayout({
