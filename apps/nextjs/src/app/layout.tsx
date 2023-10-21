@@ -6,12 +6,12 @@ import { Acme } from "next/font/google";
 const font = Acme({ weight: "400", subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.akshitkrnagpal.com"),
   title,
   description,
   openGraph: {
     type: "website",
     title,
-    url: "https://www.akshitkrnagpal.com",
   },
   twitter: {
     card: "summary_large_image",
