@@ -1,9 +1,13 @@
 import { title, description } from "@akshitkrnagpal/data";
 import "@/app/globals.css";
 import type { Metadata } from "next";
-import { Acme } from "next/font/google";
+import { Lato } from "next/font/google";
 
-const font = Acme({ weight: "400", subsets: ["latin"], display: "swap" });
+const font = Lato({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.akshitkrnagpal.com"),
