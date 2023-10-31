@@ -13,6 +13,7 @@
     "@akshitkrnagpal/data": "*",
     "@next/bundle-analyzer": "^13.5.4",
     "framer-motion": "^10.16.4",
+    "geist": "^1.0.0",
     "next": "13.5.4",
     "react": "^18",
     "react-dom": "^18",

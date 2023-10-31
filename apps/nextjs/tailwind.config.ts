@@ -11,7 +11,7 @@ const config: Config = {
       center: true,
     },
     fontFamily: {
-      raleway: ["Raleway"],
+      sans: ["var(--font-geist-sans)"],
     },
   },
   plugins: [],
