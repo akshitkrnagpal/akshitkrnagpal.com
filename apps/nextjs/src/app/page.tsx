@@ -1,22 +1,18 @@
-"use client";
-
 import Image from "next/image";
-import { motion } from "framer-motion";
 
 import image from "@/images/image.jpg";
 import { title } from "@akshitkrnagpal/data";
-
-// @ts-expect-error - The types for this package are not present for /component
-import { SocialIcon } from "react-social-icons/component";
-
-import "react-social-icons/linkedin";
-import "react-social-icons/github";
-import "react-social-icons/twitter";
+import { SocialIcon } from "@/components/social-icon";
+import {
+  MotionDiv,
+  MotionFigure,
+  MotionSection,
+} from "@/components/framer-motion-wrapper";
 
 export default function Home() {
   return (
     <main className="flex flex-col min-h-full items-center justify-center">
-      <motion.section
+      <MotionSection
         initial={{
           y: 50,
         }}
@@ -29,7 +25,7 @@ export default function Home() {
         }}
         className="flex max-w-3xl h-full flex-col-reverse gap-4 py-12"
       >
-        <motion.div
+        <MotionDiv
           initial={{
             opacity: 0,
           }}
@@ -77,9 +73,9 @@ export default function Home() {
               url="https://www.twitter.com/akshitkrnagpal"
             />
           </div>
-        </motion.div>
+        </MotionDiv>
         <div className="flex-1 px-8">
-          <motion.figure
+          <MotionFigure
             initial={{
               scale: 0.5,
               opacity: 0,
@@ -98,9 +94,9 @@ export default function Home() {
               alt="Akshit Kr Nagpal"
               priority
             />
-          </motion.figure>
+          </MotionFigure>
         </div>
-      </motion.section>
+      </MotionSection>
     </main>
   );
 }
