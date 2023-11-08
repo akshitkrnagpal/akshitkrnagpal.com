@@ -2,6 +2,7 @@ import { title, description } from "@akshitkrnagpal/data";
 import "@/app/globals.css";
 import type { Metadata } from "next";
 import { Lato } from "next/font/google";
+import { WEBSITE_URL } from "@/constants";
 
 const font = Lato({
   weight: ["400", "700"],
@@ -10,7 +11,7 @@ const font = Lato({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.akshitkrnagpal.com"),
+  metadataBase: new URL(WEBSITE_URL),
   title,
   description,
   openGraph: {
