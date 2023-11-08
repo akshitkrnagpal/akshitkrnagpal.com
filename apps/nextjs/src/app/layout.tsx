@@ -1,7 +1,13 @@
 import { title, description } from "@akshitkrnagpal/data";
 import "@/app/globals.css";
 import type { Metadata } from "next";
-import { GeistSans } from "geist/font";
+import { Lato } from "next/font/google";
+
+const font = Lato({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.akshitkrnagpal.com"),
@@ -24,12 +30,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${GeistSans.variable}`}>
+    <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </head>
-      <body className="font-sans">{children}</body>
+      <body className={font.className}>{children}</body>
     </html>
   );
 }

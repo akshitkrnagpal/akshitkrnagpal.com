@@ -23,9 +23,6 @@ importers:
       framer-motion:
         specifier: ^10.16.4
         version: 10.16.4(react-dom@18.2.0)(react@18.2.0)
-      geist:
-        specifier: ^1.0.0
-        version: 1.0.0
       next:
         specifier: 13.5.4
         version: 13.5.4(react-dom@18.2.0)(react@18.2.0)
@@ -346,10 +343,6 @@ packages:
 
   /@next/env@13.5.4:
     resolution: {integrity: sha512-LGegJkMvRNw90WWphGJ3RMHMVplYcOfRWf2Be3td3sUa+1AaxmsYyANsA+znrGCBjXJNi4XAQlSoEfUxs/4kIQ==}
-
-  /@next/font@13.5.6:
-    resolution: {integrity: sha512-urmUq05uCVJsBqAAJEV+xK5OTTodrSxdiG+351SOSjlWctywdBM6qX+K9pIe3K48RxjfnxlBbXjGyOJAji+pfw==}
-    dev: false
 
   /@next/swc-darwin-arm64@13.5.4:
     resolution: {integrity: sha512-Df8SHuXgF1p+aonBMcDPEsaahNo2TCwuie7VXED4FVyECvdXfRT9unapm54NssV9tF3OQFKBFOdlje4T43VO0w==}
@@ -809,12 +802,6 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
-
-  /geist@1.0.0:
-    resolution: {integrity: sha512-7hqXZqIdSiFbXjlMZ8Ag0fBAW8RzUjIXPkh160rT4m4ECMtsKdFX+06e0mK28oRCpU+lOB1C5Es8qxzvv7H2Hg==}
-    dependencies:
-      '@next/font': 13.5.6
-    dev: false
 
   /get-stream@6.0.1:
     resolution: {integrity: sha512-ts6Wi+2j3jQjqi70w5AlN8DFnkSwC+MqmxEzdEALB2qXZYV3X/b1CTfgPLGJNMeAWxdPfU8FO1ms3NUfaHCPYg==}

@@ -40,8 +40,10 @@ export default function Home() {
         >
           <div className="flex flex-col justify-center">
             <h1 className="sr-only">{title}</h1>
-            <h2 className="text-2xl text-slate-600 sm:text-3xl">Hey there!</h2>
-            <p className="mt-4 text-sm leading-relaxed sm:text-base">
+            <h2 className="text-2xl tracking-wide text-slate-600 sm:text-3xl">
+              Hey there!
+            </h2>
+            <p className="mt-4 text-sm leading-relaxed tracking-wider sm:text-base">
               My name is <span className="font-bold">Akshit Kr Nagpal</span> and
               I've been a self-taught Software Engineer for more than a decade
               now. I started building websites when I was just{" "}
@@ -49,7 +51,7 @@ export default function Home() {
               passionate about full-stack development. I'm known for my ability
               to deliver high-quality code at a fast pace and I'm also an open
               source hobbyist. If you're looking for someone who is driven,
-              skilled, and always looking to learn and improve,{" "}
+              skilled, and always looking to learn and improve,
               <span className="italic">I'm your guy!</span>
             </p>
           </div>
