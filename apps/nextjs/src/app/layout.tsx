@@ -31,12 +31,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="h-full">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </head>
-      <body className={font.className}>{children}</body>
+      <body
+        className={`${font.className} h-full bg-gray-100 bg-[length:2.5rem_2.5rem] bg-[-0.5rem_-0.5rem] bg-[radial-gradient(#999_1px,_transparent_0)]`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
