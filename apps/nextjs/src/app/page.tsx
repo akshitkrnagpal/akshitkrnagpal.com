@@ -43,7 +43,7 @@ export default function Home() {
             <h2 className="text-2xl tracking-wide text-slate-600 sm:text-3xl">
               Hey there!
             </h2>
-            <p className="mt-4 text-sm leading-relaxed tracking-wider sm:text-base">
+            <p className="mt-4 text-sm leading-relaxed tracking-wider sm:text-base bg-gray-100 bg-opacity-80">
               My name is <span className="font-bold">Akshit Kr Nagpal</span> and
               I've been a self-taught Software Engineer for more than a decade
               now. I started building websites when I was just{" "}
