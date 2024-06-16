@@ -8,10 +8,18 @@ import {
   MotionFigure,
   MotionSection,
 } from "@/components/framer-motion-wrapper";
+import Particles from "@/components/magicui/particles";
 
 export default function Home() {
   return (
     <main className="flex flex-col min-h-full items-center justify-center">
+      <Particles
+        className="absolute inset-0"
+        quantity={100}
+        ease={80}
+        color="#000"
+        refresh
+      />
       <MotionSection
         initial={{
           y: 50,
