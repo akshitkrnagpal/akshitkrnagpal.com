@@ -105,6 +105,9 @@ export default function Home() {
               priority
             />
           </MotionFigure>
+          <a href="https://www.whoppah.com/" target="_blank" download>
+            Work
+          </a>
         </div>
       </MotionSection>
     </main>
