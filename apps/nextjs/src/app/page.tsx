@@ -9,6 +9,7 @@ import {
   MotionSection,
 } from "@/components/framer-motion-wrapper";
 import Particles from "@/components/magicui/particles";
+import { Work } from "@/components/work";
 
 export default function Home() {
   return (
@@ -105,9 +106,7 @@ export default function Home() {
               priority
             />
           </MotionFigure>
-          <a href="https://www.whoppah.com/" target="_blank" download>
-            Work
-          </a>
+          <Work />
         </div>
       </MotionSection>
     </main>
